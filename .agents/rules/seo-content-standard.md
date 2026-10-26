@@ -150,10 +150,11 @@ Tài liệu này hệ thống hóa toàn bộ quy chuẩn viết bài chuẩn SE
 * **Quy chuẩn Bôi Đỏ Từ Khóa Bắt Buộc**:
   * Toàn bộ các lần xuất hiện của **Từ khóa chính** và **Từ khóa phụ** trong file Word (`Result/bai-viet.docx`) **bắt buộc phải được bôi đỏ (`#C00000` / `#DC143C`, in đậm chữ đỏ)**.
   * Việc bôi đỏ giúp người duyệt bài nhìn thấy ngay lập tức bản đồ phân bổ từ khóa, kiểm soát tần suất xuất hiện và đối soát trực quan không bỏ sót từ khóa mục tiêu.
-* **Tỉ lệ key trải đều toàn bài & từng mục (Không để khoảng cách quá xa)**:
-  * Từ khóa cần được **phân bổ trải đều khắp bài viết và trong từng mục (H2, H3)**.
-  * **Tuyệt đối không để khoảng cách giữa các lần xuất hiện từ khóa quá xa** (cấm viết liền 200 - 300 từ mà hoàn toàn vắng bóng từ khóa rồi mới xuất hiện lại 1 lần).
-  * Mỗi mục H2, H3 cần có sự xuất hiện nhịp nhàng của từ khóa (key chính hoặc key phụ tương ứng), kết hợp lặp lại tự nhiên trong các câu trần thuật.
+* **Tỉ lệ key trải đều toàn bài & từng mục (Không quá dày, không quá gần, không để khoảng cách quá xa)**:
+  * Từ khóa cần được **phân bổ trải đều khắp bài viết và trong từng mục (H2, H3)** một cách nhịp nhàng.
+  * **Mật độ không quá dày & không xuất hiện quá gần nhau**: Tuyệt đối không nhồi nhiều từ khóa liên tiếp trong cùng 1 câu hoặc 2 câu liền kề; không để từ khóa lặp lại dồn dập khiến người đọc thấy ngột ngạt hoặc spam.
+  * **Không để khoảng cách giữa các lần xuất hiện từ khóa quá xa**: Tránh việc viết liền 200 - 300 từ mà hoàn toàn vắng bóng từ khóa rồi mới xuất hiện lại 1 lần.
+  * **Câu chữ linh hoạt, uyển chuyển để luôn tự nhiên nhất**: Dùng cấu trúc câu đa dạng, dẫn dắt phong phú. Từ khóa phải được hòa tan mượt mà vào mạch chia sẻ trải nghiệm thực tế, chuẩn ngữ pháp tiếng Việt, đọc lên thấy hoàn toàn tự nhiên như người thật viết.
 * **Ép Mật độ Chuẩn SEO (Keyword Density: 1.5% – 2.5%)**:
   * Tổng mật độ toàn bộ cụm từ khóa (chính + phụ) bắt buộc nằm trong khoảng **1.5% – 2.5%** (tối đa không vượt quá 3.0%).
   * Tuyệt đối không dưới 1.0% (thiếu tín hiệu nhận diện cho công cụ tìm kiếm).
@@ -166,7 +167,7 @@ Tài liệu này hệ thống hóa toàn bộ quy chuẩn viết bài chuẩn SE
   * **Thẻ H1**: Tối ưu Key 2 khác với Title.
   * **Mở bài (Sapo)**: 1 lần Key chính (xuất hiện trong 100 từ đầu tiên, ngắn gọn thu hút).
   * **H2 đầu tiên**: 1 lần Key chính.
-  * **Các H2/H3 tiếp theo**: Phân bổ linh hoạt các Key phụ người dùng cung cấp trải đều từng đoạn, không để cách xa nhau.
+  * **Các H2/H3 tiếp theo**: Phân bổ linh hoạt các Key phụ người dùng cung cấp trải đều từng đoạn, giữ khoảng cách cân đối, tự nhiên.
   * **Kết bài (Conclusion)**: 1 lần Key chính đúc kết giá trị và kêu gọi hành động (CTA ngắn gọn).
 
 ---
@@ -216,3 +217,22 @@ Mọi bài viết xuất bản ra file Word (`Result/bai-viet.docx`) bắt buộ
 Để đảm bảo tuyệt đối không làm mất dữ liệu, không ghi đè nhầm file và giúp quản lý bàn giao minh bạch:
 1. **Thư mục `ContentTour/`**: Chứa toàn bộ tài liệu nguồn do người dùng cung cấp. Agent CHỈ ĐỌC dữ liệu từ đây; nghiêm cấm chỉnh sửa, đổi tên, ghi đè hoặc xóa bất kỳ file nào trong `ContentTour/`.
 2. **Thư mục `Result/`**: Chứa toàn bộ các sản phẩm nội dung bàn giao (dàn ý `Result/outline.docx`, bài viết `Result/bai-viet.docx` hoặc tên theo từ khóa/slug). Toàn bộ kết quả BẮT BUỘC lưu vào thư mục này. Không để file kết quả nằm lộn xộn ở thư mục gốc.
+
+---
+
+## 9. QUY CHUẨN FIX NỘI DUNG CÓ SẴN (/fix-post)
+* Áp dụng khi người dùng cung cấp bài viết đã chuẩn bị sẵn trong ContentTour/* và cần tinh chỉnh đạt chuẩn SEO hoàn hảo.
+* **Nguyên tắc cốt lõi**:
+  1. **Bảo toàn nội dung & format đã duyệt**: Tuyệt đối không làm mới lại toàn bộ bài viết, không xóa bỏ thông tin thực tế, không xáo trộn cấu trúc các đề mục, bảng biểu, danh sách hay timeline đã có.
+  2. **Tối ưu mật độ & vị trí từ khóa**:
+     - Mật độ tổng nằm chuẩn trong khoảng **1.5% - 2.5%** (tối đa 3.0%).
+     - **Trải đều toàn bài và trong từng mục**: Mật độ không quá dày, không xuất hiện quá gần nhau (không nhồi 2 key liền kề); không để khoảng cách quá xa (trên 200 - 300 từ) mới xuất hiện lại.
+     - **Câu chữ linh hoạt, uyển chuyển**: Hòa tan từ khóa vào ngữ cảnh tự nhiên nhất, đúng văn phong người thật chia sẻ.
+  3. **Chuẩn hóa Master Header Block**:
+     - Bảng KEY & VOLUME (tiêu đề vàng #FFFF00).
+     - Check spin:, Check AI:, Key chính:, Meta: (140 - 155 ký tự có CTA).
+     - Title: (55 - 60 ký tự, tối ưu Key 1) & H1: (55 - 60 ký tự, tối ưu Key 2 khác Title).
+  4. **Gọt giũa Sapo & Kết luận**:
+     - Sapo: ngắn gọn 2 - 3 dòng (<155 từ), thu hút, chứa Key chính trong 100 từ đầu.
+     - Kết bài: ngắn gọn 2 - 3 câu (<50-80 từ), chứa 1 lần Key chính + CTA hành động rõ ràng. Không chèn ảnh hay note ảnh tại Kết luận.
+  5. **Bảo toàn file gốc & Xuất kết quả vào Result/**: File trong ContentTour/* chỉ đọc, kết quả bài viết hoàn thiện xuất ra Result/[slug]-fixed.docx (hoặc Result/bai-viet.docx).

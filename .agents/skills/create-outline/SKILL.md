@@ -31,7 +31,10 @@ description: Tạo dàn ý bài viết chuẩn SEO từ cụm từ khóa đượ
    - Mỗi thẻ <60 ký tự (kiểm soát ngầm, **KHÔNG ghi số ký tự cạnh tiêu đề**).
    - **Mục 1 (H2 đầu tiên)**: Bắt buộc chứa từ khóa chính.
    - Phân bổ các từ khóa phụ người dùng cung cấp vào các mục tiếp theo. Các mục còn lại không nhắm key thì tập trung triển khai nội dung thực tế, không chèn gượng ép.
-   - **Tỉ lệ từ khóa phải trải đều trong toàn bài và trong từng mục (H2, H3)**: Tuyệt đối không để khoảng cách quá xa mới xuất hiện key một lần, tránh dồn cục keyword.
+   - **Tỉ lệ từ khóa phải trải đều trong toàn bài và trong từng mục (H2, H3)**:
+     - Mật độ không quá dày và không xuất hiện quá gần nhau (tuyệt đối không nhồi 2 key liền kề nhau).
+     - Không để khoảng cách quá xa mới xuất hiện key một lần.
+     - Dùng câu chữ linh hoạt, uyển chuyển để khi viết bài người đọc luôn cảm thấy tự nhiên, trôi chảy nhất.
    - Đánh dấu Heading trọng tâm ⭐.
    - **Quy cách hiển thị số (Numbering Style)**:
      - Dùng cách đánh số tự nhiên: `1.`, `1.1.`, `1.2.`, `2.`, `2.1.`,...

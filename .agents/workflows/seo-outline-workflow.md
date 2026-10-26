@@ -80,7 +80,8 @@ Tuân thủ nghiêm ngặt các quy tắc:
 * **Phần Kết luận**: Viết thật ngắn gọn, súc tích (chỉ từ 2 - 3 câu ngắn hoặc dưới 50 - 80 từ), tóm tắt nhanh giá trị cốt lõi, bắt buộc chứa 1 lần từ khóa chính + lời kêu gọi hành động (CTA) rõ ràng, dứt khoát. Tuyệt đối không chèn ảnh hay ghi chú ảnh ở Kết luận.
 * **Bảng Ma trận phân bổ từ khóa (Keyword Distribution Matrix)**:
   - Thống kê vị trí rải từ khóa đảm bảo mật độ tổng bài 1.5% - 2.5% (tối đa 3.0%).
-  - **Tỉ lệ từ khóa phải trải đều trong toàn bài và trong từng mục (H2, H3)**: Tuyệt đối không dồn cục từ khóa vào một chỗ rồi để các đoạn khác cách quá xa mới xuất hiện key 1 lần.
+  - **Tỉ lệ từ khóa phải trải đều trong toàn bài và trong từng mục (H2, H3)**: Mật độ không quá dày, không xuất hiện quá gần nhau (cấm nhồi 2 key liền kề); đồng thời không để khoảng cách quá xa mới xuất hiện key 1 lần.
+  - **Câu chữ linh hoạt, tự nhiên**: Từ khóa phải hòa tan khéo léo vào ngữ cảnh diễn đạt thực tế của người viết.
   - Tích hợp kế hoạch Định dạng (Table/List) và Ảnh + Alt text.
 * **Bảng Checklist Thẩm định**: Rà soát lại toàn bộ tiêu chí kỹ thuật trước khi bàn giao dàn bài cho người dùng.
 
@@ -200,7 +201,7 @@ Mỗi khi người dùng cung cấp cụm từ khóa, Agent sẽ trả về kế
 - [ ] Description đạt 140 - 155 ký tự, có CTA kích thích click, không tiết lộ đáp án.
 - [ ] Sapo ngắn gọn 2 - 3 dòng (<155 từ), thu hút, có Key chính trong 100 từ đầu, giải quyết đúng tiêu đề bài viết.
 - [ ] Kết bài ngắn gọn (2 - 3 câu, <50-80 từ), có Key chính và CTA rõ ràng.
-- [ ] Tỉ lệ từ khóa trải đều trong toàn bài và trong từng mục, không để khoảng cách quá xa mới xuất hiện key một lần.
+- [ ] Tỉ lệ từ khóa trải đều trong toàn bài và từng mục: mật độ không quá dày, không xuất hiện quá gần nhau, không để khoảng cách quá xa, câu chữ linh hoạt và tự nhiên.
 - [ ] Tối thiểu 4 thẻ H2, mỗi H2 có ít nhất 2 thẻ H3.
 - [ ] H2 đầu tiên chứa Key chính.
 - [ ] Các thẻ Heading ngắn gọn (<60 ký tự).

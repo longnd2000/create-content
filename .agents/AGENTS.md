@@ -65,19 +65,19 @@ Chi tiết quy chuẩn toàn diện được lưu trữ tại: [.agents/rules/se
        - Toàn bộ Dàn ý, Bảng KEY & VOLUME, Ma trận phân bổ từ khóa và Thân bài viết **CHỈ ĐƯỢC PHÉP CHỨA VÀ PHÂN BỔ ĐÚNG CÁC CỤM KEY NGƯỜI DÙNG ĐÃ GIAO**.
        - Trong Bảng Ma trận phân bổ từ khóa: Cột "Từ khóa mục tiêu" **CHỈ ĐƯỢC PHÉP** điền các từ khóa nằm trong danh sách người dùng đã cung cấp. Các phần nội dung không chứa từ khóa thì để dấu `-` hoặc ghi rõ không chèn key, tuyệt đối không tự bịa ra từ khóa khác để nhét vào bảng.
    - **Bắt buộc bôi đỏ toàn bộ Key chính & Key phụ**: Mọi lần xuất hiện của từ khóa chính và từ khóa phụ trong file Word (`Result/bai-viet.docx`) **bắt buộc phải được bôi đỏ (`#C00000` / in đậm chữ đỏ)**. Điều này giúp người dùng kiểm tra trực quan ngay lập tức sự phân bổ và tần suất xuất hiện của từ khóa trên toàn bài viết.
-   - **Tỉ lệ key trải đều toàn bài & trong từng mục (Không để khoảng cách quá xa)**:
-     - Từ khóa cần được **phân bổ trải đều khắp bài viết và trong từng mục (H2, H3)**.
-     - **Tuyệt đối không để khoảng cách giữa các lần xuất hiện key quá xa** (cấm viết liền 200 - 300 từ mà hoàn toàn không có từ khóa nào rồi mới xuất hiện lại).
-     - Mỗi mục H2, H3 cần có sự xuất hiện nhịp nhàng của từ khóa (key chính hoặc key phụ tương ứng), kết hợp lặp lại tự nhiên trong các câu trần thuật.
+   - **Tỉ lệ key trải đều toàn bài & trong từng mục (Không quá dày, không quá gần, không để khoảng cách quá xa)**:
+     - Từ khóa cần được **phân bổ trải đều khắp bài viết và trong từng mục (H2, H3)** một cách nhịp nhàng.
+     - **Mật độ không quá dày & không xuất hiện quá gần nhau**: Tuyệt đối không nhồi nhiều từ khóa liên tiếp trong cùng 1 câu hoặc 2 câu liền kề; không để từ khóa lặp lại dồn dập khiến người đọc thấy ngột ngạt hoặc spam.
+     - **Không để khoảng cách giữa các lần xuất hiện quá xa**: Tránh việc viết liền 200 - 300 từ mà hoàn toàn không có từ khóa nào rồi mới xuất hiện lại.
+     - **Câu chữ linh hoạt, uyển chuyển để luôn tự nhiên nhất**: Dùng cấu trúc câu đa dạng, ngữ cảnh dẫn dắt phong phú. Từ khóa phải được hòa tan mượt mà vào mạch chia sẻ trải nghiệm thực tế, chuẩn ngữ pháp tiếng Việt, đọc lên thấy hoàn toàn tự nhiên như người thật viết.
    - **Ép đúng tỷ lệ chuẩn SEO (Mật độ 1.5% - 2.5%)**:
      - Key chính: Xuất hiện từ 6 - 10 lần (tùy dung lượng bài 1.200 - 2.000 từ).
      - Key phụ: Mỗi key xuất hiện từ 2 - 4 lần rải đều tại các mục tương ứng.
      - Tổng mật độ từ khóa mục tiêu được khống chế chặt chẽ trong khoảng **1.5% - 2.5%** (tối đa 3.0%), tuyệt đối không dưới 1% (thiếu tín hiệu SEO) và không quá 3.5% (chống spam keyword).
-   - **Không gượng ép, linh hoạt & mượt mà (Natural & Fluent Placement)**:
+   - **Không gượng ép, ngữ cảnh mượt mà (Natural & Fluent Placement)**:
      - Tuyệt đối không nhồi nhét từ khóa thô cứng làm hỏng cấu trúc câu hoặc gượng gạo văn phong.
-     - Từ khóa phải được hòa tan tự nhiên vào lời kể thực tế, đúng ngữ pháp tiếng Việt.
+     - Các câu trước và sau từ khóa phải liền mạch về ý nghĩa, mang lại cảm giác chân thực, mạch lạc.
    - **Bản đồ phân bổ đều đặn**: Title (Key 1), H1 (Key 2 khác Title), Mở bài (Sapo: 1 key chính trong 100 từ đầu), H2 đầu tiên (1 key chính), các H2/H3 tiếp theo phân bổ các key phụ của người dùng trải đều trong từng đoạn, Kết bài (1 key chính kèm CTA).
-
 8. **Quy cách lập Dàn ý (Outline Format)**:
    - **Đánh số tự nhiên (Numbering)**: Tiêu đề hiển thị phải dùng dạng số tự nhiên (`1.`, `1.1.`, `1.2.`, `2.`, `2.1.`,...). **Tuyệt đối KHÔNG hiển thị ký hiệu kỹ thuật như `H2.1`, `H3.1.1`**. (Trong file Word, các mục này vẫn được gán đúng Style Heading 2, Heading 3 chuẩn SEO).
    - **Không hiển thị số đếm ký tự (Clean & Copy-Ready)**: Agent tự động kiểm soát độ dài chuẩn SEO ngầm bên dưới, nhưng **tuyệt đối KHÔNG hiển thị số đếm ký tự `(xx ký tự)`** trên Title, H1 hay các Heading trong dàn ý. Dàn ý phải sạch sẽ hoàn toàn để người dùng copy và sử dụng được ngay mà không cần xóa tay.
@@ -102,6 +102,7 @@ Chi tiết quy chuẩn toàn diện được lưu trữ tại: [.agents/rules/se
      - Lệnh `/create-outline`: Đọc tài liệu tour từ `ContentTour/*`, xuất dàn ý ra `Result/outline.docx`.
      - Lệnh `/update-outline`: Đọc dàn ý từ `Result/outline.docx`, cập nhật trực tiếp vào `Result/outline.docx`.
      - Lệnh `/create-post`: Đọc dàn ý đã duyệt từ `Result/outline.docx`, đối chiếu tài liệu tour từ `ContentTour/*`, xuất bài viết hoàn chỉnh vào `Result/bai-viet.docx`.
+     - Lệnh /fix-post: Đọc bài viết có sẵn từ ContentTour/*, tinh chỉnh chuẩn SEO (mật độ & vị trí key trải đều, giữ nguyên format và nội dung đã duyệt), xuất kết quả hoàn thiện vào Result/[slug]-fixed.docx.
 
 10. **Quy chuẩn Viết Bài Tự Nhiên, Trực Diện & Kiểm Soát Tỷ Lệ AI Dưới 5% (Strict Anti-AI & Burstiness Standard)**:
    - **Cam kết Tỷ lệ AI < 5% (Human Content ≥ 95%)**: Khi kiểm tra qua các công cụ quét AI hàng đầu hiện nay như **Copyleaks, GPTZero, Winston AI...**, tỷ lệ AI Content **bắt buộc phải dưới 5%**. Tuyệt đối không để sót câu văn nào bị công cụ bôi màu gắn cờ AI.
@@ -182,6 +183,7 @@ Tất cả sản phẩm nội dung bàn giao cho người dùng (từ Dàn ý đ
 | `/create-outline <cụm key> [file tour]` | Đọc file tour được chỉ định trong `ContentTour/*`, phân tích intent, tạo Title (tối ưu Key 1), H1 (tối ưu Key 2 khác Title), Meta Des, Sapo ngắn gọn thu hút (chứa key chính trong 100 từ đầu), Dàn ý đánh số `1.`, `1.1.` tinh gọn, phân bổ key trải đều từng mục. **ĐẦU RA: Tự động xuất trực tiếp ra file `Result/outline.docx`**. | **TUYỆT ĐỐI KHÔNG VIẾT BÀI CHI TIẾT**. Phải bám sát dữ liệu file tour trong `ContentTour/*`. Chỉ tạo dàn bài và xuất ra file `Result/outline.docx`. |
 | `/update-outline <nội dung sửa>` | Đọc trực tiếp từ file `Result/outline.docx`, cập nhật theo phản hồi của người dùng, **tự động cập nhật lại file `Result/outline.docx`**. | **VẪN KHÔNG VIẾT BÀI**. Chỉ cập nhật lại dàn bài theo đúng ý kiến người dùng. |
 | `/create-post` | Đọc dàn bài trực tiếp từ file `Result/outline.docx` và đối chiếu dữ liệu file tour trong `ContentTour/*`, tiến hành viết bài hoàn chỉnh chuẩn SEO 100%. Title tối ưu Key 1, H1 tối ưu Key 2 khác Title, Sapo ngắn gọn thu hút chứa Key chính, Kết bài ngắn gọn kêu gọi CTA chứa Key chính, từ khóa phân bổ trải đều toàn bài và từng mục không để cách xa nhau. **ĐẦU RA: Xuất trực tiếp ra file `.docx` (Microsoft Word) trong thư mục `Result/`** (ví dụ: `Result/bai-viet.docx`). | Chỉ thực hiện khi người dùng đã duyệt dàn ý và phát lệnh này. Lưu thành file `.docx` tại thư mục `Result/`. |
+| /fix-post <file tour> [keys] | Đọc bài viết đã chuẩn bị sẵn trong ContentTour/*, giữ nguyên format và nội dung đã duyệt, chỉ tinh chỉnh tối ưu chuẩn SEO (mật độ key 1.5% - 2.5%, phân bổ trải đều không quá dày, không quá gần, không để cách quá xa, câu chữ linh hoạt tự nhiên, Title/H1 tối ưu 2 key khác nhau, Sapo & Kết bài ngắn gọn). **ĐẦU RA: Xuất trực tiếp ra file Word .docx trong thư mục Result/** (ví dụ: Result/[slug]-fixed.docx). | **KHÔNG LÀM MỚI TOÀN BỘ BÀI**, không xáo trộn format đã có. Bảo toàn 100% file gốc trong ContentTour/*. Kết quả chỉ lưu vào Result/. |
 | `/create-sapo <key / H1>` | Đề xuất 3 phương án mở bài Sapo ngắn gọn, thu hút (2-3 dòng, <155 từ, có key chính trong 100 từ đầu). | Chỉ xuất 3 phương án Sapo, không viết thêm các phần khác. |
 | `/create-title <key>` | Đề xuất 3 phương án Title (55-60 ký tự, key ở đầu, có số, từ bổ trợ, `\|` hoặc `-`). | Chỉ xuất 3 phương án Title kèm số đếm ký tự. |
 | `/create-des <key>` | Đề xuất 2 phương án Meta Description (140-155 ký tự, key ở đầu, có CTA). | Chỉ xuất 2 phương án Meta Description kèm số đếm ký tự. |

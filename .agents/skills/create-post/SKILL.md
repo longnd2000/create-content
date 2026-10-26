@@ -101,8 +101,10 @@ description: Đọc dàn bài đã duyệt từ file Result/outline.docx và ti�
      - Trước khi xuất file, Agent phải rà soát và loại bỏ toàn bộ emoji, icon, ký tự trang trí không phù hợp; đồng thời kiểm tra font, cỡ chữ, căn lề, kiểu đậm và màu chữ của từng nhóm nội dung.
    - **ÉP ĐÚNG TỶ LỆ KEY VÀ PHÂN BỔ MƯỢT MÀ, TRẢI ĐỀU TOÀN BÀI**:
      - Mật độ tổng cụm từ khóa chuẩn SEO: **1.5% - 2.5%** (tối đa 3.0%, tuyệt đối không dưới 1.0% và không quá 3.5%).
-     - **Tỉ lệ từ khóa phải trải đều trong toàn bài và trong từng mục (H2, H3)**: Phân bổ từ khóa tự nhiên vào từng phân đoạn nội dung. **Tuyệt đối không để khoảng cách quá xa mới xuất hiện key một lần**, tránh hiện tượng đầu bài hay cuối bài bị dồn cục từ khóa trong khi thân bài thiếu hụt tín hiệu SEO.
-     - Tích hợp từ khóa mềm mại, tự nhiên, đúng ngữ pháp; cấm nhồi nhét thô cứng làm gượng gạo câu văn.
+     - **Tỉ lệ từ khóa phải trải đều trong toàn bài và trong từng mục (H2, H3)**:
+       - **Mật độ không quá dày & không xuất hiện quá gần nhau**: Tuyệt đối không nhồi nhiều từ khóa liên tiếp trong cùng 1 câu hoặc 2 câu liền kề; không lặp lại dồn dập khiến người đọc thấy ngột ngạt hoặc spam.
+       - **Không để khoảng cách quá xa mới xuất hiện key một lần**: Tránh viết liền 200 - 300 từ mà hoàn toàn vắng bóng từ khóa rồi mới xuất hiện lại.
+       - **Dùng câu chữ linh hoạt, biến tấu ngữ cảnh mượt mà để luôn tự nhiên nhất**: Dùng cấu trúc câu phong phú, từ khóa được hòa tan tự nhiên vào lời kể trải nghiệm thực tế, chuẩn ngữ pháp tiếng Việt, đọc lên thấy hoàn toàn tự nhiên như người thật viết.
    - **QUY CHUẨN MÔ TẢ HÌNH ẢNH NGẮN GỌN & DỄ HIỂU (SIMPLE IMAGE NOTES)**:
      - Trung bình mỗi **250 - 350 từ** hoặc mỗi **H2/H3 phù hợp** chèn một dòng ghi chú mô tả ảnh **ngắn gọn, đơn giản, dễ hiểu**, đặt trong ngoặc đơn (...) ngay tại vị trí cần chèn ảnh.
      - **Ngoại lệ bắt buộc**: Phần **Kết luận** và các đoạn CTA cuối bài không chèn ảnh, không chèn note ảnh và không đặt ghi chú hình ảnh trong ngoặc đơn.
