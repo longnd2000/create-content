@@ -20,9 +20,10 @@ description: Tạo dàn ý bài viết chuẩn SEO từ cụm từ khóa đượ
    - **QUY ĐỊNH BẮT BUỘC VỀ KEYWORD**: **Chỉ sử dụng đúng số lượng và cụm từ khóa do người dùng cung cấp**. Tuyệt đối **KHÔNG tự ý bịa đặt, suy diễn, mở rộng hay thêm bớt** bất kỳ từ khóa nào khác (không tự thêm "từ khóa liên quan", "từ khóa LSI tự nghĩ", "từ khóa phụ tự chế").
 
 2. **Khởi tạo Bộ Tiêu Đề & Mô Tả**:
-   - **3 Tiêu đề SEO (Title)**: Chuẩn 55 - 60 ký tự, Key chính ở đầu (1-2 lần), có số, từ bổ trợ, dấu `|` hoặc `-`, độc nhất. **SEO Title này được sử dụng trực tiếp làm Tiêu đề bài viết (Thẻ H1)**, đồng nhất 100% giữa SERP và CMS.
+   - **3 Tiêu đề SEO (Title)**: Chuẩn 55 - 60 ký tự, tối ưu Key 1 ở đầu (1-2 lần), có số, từ bổ trợ, dấu `|` hoặc `-`, độc nhất và thu hút click.
+   - **3 Tiêu đề Thẻ H1 (Tiêu đề bài viết trên trang)**: Chuẩn 55 - 60 ký tự, **KHÁC 100% so với SEO Title**, tối ưu **Key 2** (từ khóa khác Key 1, lấy từ danh sách từ khóa người dùng giao).
    - **2 Thẻ mô tả (Meta Description)**: Chuẩn 140 - 155 ký tự, Key chính ở đầu, không tiết lộ đáp án, có CTA cuối đoạn (*Click xem ngay!*).
-   - **1 Đoạn Sapo mẫu**: 2 - 3 dòng (<155 từ), giải quyết vấn đề của tiêu đề bài viết, Key chính trong 100 từ đầu.
+   - **1 Đoạn Sapo mẫu**: Ngắn gọn 2 - 3 dòng (<155 từ), thu hút, giải quyết vấn đề của tiêu đề bài viết, Key chính trong 100 từ đầu.
    - ⚠️ **LƯỢC BỎ HIỂN THỊ SỐ KÝ TỰ**: Agent kiểm soát độ dài chuẩn SEO ngầm bên dưới, **tuyệt đối KHÔNG in `(xx ký tự)`** ra Title, Meta Des hay các Headings để người dùng copy dùng ngay.
 
 3. **Cấu trúc Dàn ý Headings (Đánh số 1., 1.1., 1.2., 2., 2.1.,...)**:
@@ -30,6 +31,7 @@ description: Tạo dàn ý bài viết chuẩn SEO từ cụm từ khóa đượ
    - Mỗi thẻ <60 ký tự (kiểm soát ngầm, **KHÔNG ghi số ký tự cạnh tiêu đề**).
    - **Mục 1 (H2 đầu tiên)**: Bắt buộc chứa từ khóa chính.
    - Phân bổ các từ khóa phụ người dùng cung cấp vào các mục tiếp theo. Các mục còn lại không nhắm key thì tập trung triển khai nội dung thực tế, không chèn gượng ép.
+   - **Tỉ lệ từ khóa phải trải đều trong toàn bài và trong từng mục (H2, H3)**: Tuyệt đối không để khoảng cách quá xa mới xuất hiện key một lần, tránh dồn cục keyword.
    - Đánh dấu Heading trọng tâm ⭐.
    - **Quy cách hiển thị số (Numbering Style)**:
      - Dùng cách đánh số tự nhiên: `1.`, `1.1.`, `1.2.`, `2.`, `2.1.`,...
@@ -41,13 +43,14 @@ description: Tạo dàn ý bài viết chuẩn SEO từ cụm từ khóa đượ
      - Kế hoạch hình ảnh, alt text và format hiển thị (Bảng/List) được quy hoạch tập trung tại Bảng Ma Trận ở cuối dàn ý.
    - **PHẦN CUỐI BẮT BUỘC LÀ KẾT LUẬN**:
      - H2 cuối cùng của dàn ý phải là **Kết luận**, không đặt thêm heading nội dung nào sau phần này.
-     - Trong Kết luận phải quy hoạch đủ 3 ý: kết thúc vấn đề và tóm tắt giá trị chính, call to action, thông tin website và số điện thoại nếu người dùng gửi kèm trong lệnh tạo dàn ý/bài viết.
-     - Chỉ được sử dụng đúng website và số điện thoại người dùng cung cấp. Nếu không có thông tin liên hệ, ghi CTA chung và tuyệt đối không tự bịa website, hotline hoặc dữ liệu liên hệ.
+     - **Quy cách viết Kết luận**: Viết thật ngắn gọn, súc tích (chỉ từ 2 - 3 câu ngắn hoặc dưới 50 - 80 từ).
+     - Trong Kết luận phải quy hoạch đủ: tóm tắt nhanh giá trị chính, **bắt buộc chứa 1 lần từ khóa chính**, kèm **lời kêu gọi hành động (CTA)** rõ ràng, dứt khoát. Nếu người dùng gửi kèm website/hotline thì đưa vào, không có thì kêu gọi chung, tuyệt đối không tự bịa liên hệ. Tuyệt đối không chèn ảnh hay ghi chú ảnh tại Kết luận.
    - Đảm bảo phần áp chót trước Kết luận được xây dựng kỹ lưỡng.
 
 4. **Lập Bảng Ma Trận Phân Bổ Từ Khóa & Checklist Thẩm Định**:
    - Lập bảng ánh xạ: Heading -> Từ khóa mục tiêu -> Định dạng -> Kế hoạch Ảnh & Ghi chú mô tả ảnh.
    - **Cột "Từ khóa mục tiêu"**: **CHỈ ĐƯỢC PHÉP** điền đúng các từ khóa người dùng đã cung cấp. Các mục không chứa key thì ghi `-` hoặc không chèn key, tuyệt đối không tự bịa thêm cụm từ mới để điền vào.
+   - **Kiểm soát rải đều**: Đảm bảo từ khóa phân bố đều khắp các mục, tránh xuất hiện thưa thớt hoặc ngắt quãng quá dài.
    - Kiểm tra đối chiếu với Pre-publish Checklist.
 
 5. **XUẤT BẢN FILE WORD DOCX VÀO THƯ MỤC RESULT/ (CHỈ GIỮ FILE DOCX)**:

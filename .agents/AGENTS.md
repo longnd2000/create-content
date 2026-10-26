@@ -9,10 +9,10 @@ Chi tiết quy chuẩn toàn diện được lưu trữ tại: [.agents/rules/se
 
 ## 1. NGUYÊN TẮC CỐT LÕI (CORE DIRECTIVES)
 
-1. **Title & Tiêu đề bài viết (SEO Title / Thẻ H1)**:
-   - **Đồng nhất 100%**: Theo kinh nghiệm thực chiến của chuyên gia Content SEO, **SEO Title được sử dụng trực tiếp làm Tiêu đề bài viết (Thẻ H1)**. Điều này giúp tối ưu trải nghiệm người dùng khi click từ Google vào trang, đồng thời tương thích trực tiếp với trường "Post Title" trên các CMS (WordPress, Haravan...). Tiêu đề to đầu tiên của bài viết (Heading 1) chính là SEO Title.
+1. **Title (SEO Title)**:
+   - **Tối ưu 1 key riêng biệt**: SEO Title tối ưu 1 cụm từ khóa (thường là từ khóa chính có Search Intent cao nhất hoặc Volume cao nhất do người dùng cung cấp).
    - **Độ dài chuẩn**: **55 - 60 ký tự** (kiểm soát ngầm bên dưới, không in số ký tự thừa thãi).
-   - **Vị trí từ khóa**: Từ khóa chính nằm **ngay đầu Title**, xuất hiện **1 - 2 lần** (2 lần nếu tự nhiên, không chèn từ xen ngang).
+   - **Vị trí từ khóa**: Từ khóa mục tiêu của Title nằm **ngay đầu Title**, xuất hiện **1 - 2 lần** (2 lần nếu tự nhiên, không chèn từ xen ngang).
    - **Yếu tố phụ**: Có số (TOP 10, 5+...), từ bổ trợ (uy tín, giá rẻ, chuẩn, trọn gói...), dấu ngăn cách `|` hoặc `-`, độc nhất và thu hút click.
 
 2. **Meta Description**:
@@ -22,12 +22,13 @@ Chi tiết quy chuẩn toàn diện được lưu trữ tại: [.agents/rules/se
    - Bắt buộc kết thúc bằng lời kêu gọi hành động (CTA): *Click xem ngay!, Xem thêm!...*
 
 3. **Thẻ H1 (Tiêu đề chính trên trang)**:
-   - Duy nhất 1 H1/bài, **lấy chính xác từ SEO Title** ở trên. Không tạo thêm 1 phiên bản H1 khác gây lệch hay phân mảnh khi đưa lên website.
+   - **H1 KHÁC TITLE 100%**: H1 và Title là 2 tiêu đề độc lập, không dùng chung 1 nội dung.
+   - **Tối ưu 2 key khác nhau**: H1 tối ưu **1 key riêng** và Title tối ưu **1 key riêng** (2 key hoàn toàn khác nhau, lấy từ danh sách từ khóa do người dùng cung cấp).
+   - **Duy nhất 1 H1/bài**: H1 đứng đầu bài viết trên trang web, tự nhiên, hấp dẫn, bao quát toàn bài và chuẩn SEO.
 
 4. **Sapo (Đoạn mở đầu)**:
-   - Độ dài **2 - 3 dòng** (<155 từ).
-   - Giải quyết bài toán của H1, khơi gợi tò mò.
-   - Chứa từ khóa chính trong **100 từ đầu tiên**.
+   - **Ngắn gọn & Thu hút**: Độ dài **2 - 3 dòng** (<155 từ), mở đầu hấp dẫn, khơi gợi tò mò mạnh mẽ để giữ chân người đọc.
+   - **Chứa từ khóa chính**: Bắt buộc chứa từ khóa chính ngay trong **100 từ đầu tiên**, giải quyết bài toán của Title và H1.
 
 5. **Heading 2 - Heading 6**:
    - Độ dài mỗi thẻ thường **< 60 ký tự**.
@@ -42,7 +43,11 @@ Chi tiết quy chuẩn toàn diện được lưu trữ tại: [.agents/rules/se
    - Tích cực sử dụng **Bảng (Table)** và **Danh sách (List)** để tóm tắt dữ liệu, tăng độ trực quan.
    - Số liệu, mốc thời gian, giá tour phải chuẩn xác 100% theo tài liệu nguồn.
    - H3/H2 áp chót trước Kết luận không được viết quá ngắn.
-   - **Quy chuẩn Phần Kết luận (Viết thật ngắn gọn & cô đọng)**: Kết bài viết **thật ngắn gọn, súc tích (chỉ từ 2 - 3 câu ngắn hoặc dưới 50 - 80 từ)**. Tuyệt đối không kéo dài lê thê, không triết lý sáo rỗng, tóm tắt nhanh giá trị cốt lõi (chứa 1 lần từ khóa chính), có CTA rõ ràng và tuyệt đối không chèn ảnh hay ghi chú note ảnh ở Kết luận.
+   - **Quy chuẩn Phần Kết luận (Ngắn gọn, Kêu gọi & Chứa Key chính)**:
+     - Kết bài viết **thật ngắn gọn, súc tích (chỉ từ 2 - 3 câu ngắn hoặc dưới 50 - 80 từ)**. Tuyệt đối không kéo dài lê thê, không triết lý sáo rỗng.
+     - **Bắt buộc chứa 1 lần từ khóa chính**.
+     - **Có lời kêu gọi hành động (Call To Action - CTA)** rõ ràng, dứt khoát (kèm website/hotline nếu người dùng cung cấp).
+     - Tuyệt đối không chèn ảnh hay ghi chú note ảnh ở Kết luận.
    - **Quy chuẩn Mô tả Hình ảnh Ngắn Gọn & Dễ Hiểu (Simple Image Notes)**:
      - Trung bình mỗi **250 - 350 từ** hoặc mỗi **H2/H3** chèn một dòng ghi chú mô tả ảnh **ngắn gọn, đơn giản, dễ hiểu**, đặt trong ngoặc đơn (...) ngay tại vị trí cần chèn ảnh.
      - **Tuyệt đối không viết rườm rà**: Bỏ toàn bộ các trường thông số kỹ thuật dài dòng (chủ thể góc máy, quy cách kích thước pixel, dung lượng KB, tên file ảnh SEO, thẻ alt text, caption...).
@@ -52,7 +57,7 @@ Chi tiết quy chuẩn toàn diện được lưu trữ tại: [.agents/rules/se
        - (Cần làm 1 cái ảnh chung tổng hợp 1 số điểm đến đẹp ở Hà Giang trong 3 ngày 2 đêm ở đây)
        - (Cần làm 1 ảnh phòng riêng homestay sạch sẽ, cửa sổ kính nhìn thẳng ra biển mây sớm mai ở mục này)
 
-7. **Chiến lược Từ khóa & Quy chuẩn Bôi Đỏ Kiểm Soát (Keyword Strategy & Red Highlighting)**:
+7. **Chiến lược Từ khóa & Phân Bổ Trải Đều (Keyword Strategy & Even Distribution)**:
    - **QUY ĐỊNH BẮT BUỘC VỀ DANH SÁCH TỪ KHÓA (STRICT KEYWORD INVENTORY & ZERO HALLUCINATION)**:
      - **Chỉ sử dụng ĐÚNG số lượng và cụm từ khóa do người dùng cung cấp**:
        - Người dùng cung cấp bao nhiêu cụm key thì dùng **CHÍNH XÁC bấy nhiêu cụm key**.
@@ -60,6 +65,10 @@ Chi tiết quy chuẩn toàn diện được lưu trữ tại: [.agents/rules/se
        - Toàn bộ Dàn ý, Bảng KEY & VOLUME, Ma trận phân bổ từ khóa và Thân bài viết **CHỈ ĐƯỢC PHÉP CHỨA VÀ PHÂN BỔ ĐÚNG CÁC CỤM KEY NGƯỜI DÙNG ĐÃ GIAO**.
        - Trong Bảng Ma trận phân bổ từ khóa: Cột "Từ khóa mục tiêu" **CHỈ ĐƯỢC PHÉP** điền các từ khóa nằm trong danh sách người dùng đã cung cấp. Các phần nội dung không chứa từ khóa thì để dấu `-` hoặc ghi rõ không chèn key, tuyệt đối không tự bịa ra từ khóa khác để nhét vào bảng.
    - **Bắt buộc bôi đỏ toàn bộ Key chính & Key phụ**: Mọi lần xuất hiện của từ khóa chính và từ khóa phụ trong file Word (`Result/bai-viet.docx`) **bắt buộc phải được bôi đỏ (`#C00000` / in đậm chữ đỏ)**. Điều này giúp người dùng kiểm tra trực quan ngay lập tức sự phân bổ và tần suất xuất hiện của từ khóa trên toàn bài viết.
+   - **Tỉ lệ key trải đều toàn bài & trong từng mục (Không để khoảng cách quá xa)**:
+     - Từ khóa cần được **phân bổ trải đều khắp bài viết và trong từng mục (H2, H3)**.
+     - **Tuyệt đối không để khoảng cách giữa các lần xuất hiện key quá xa** (cấm viết liền 200 - 300 từ mà hoàn toàn không có từ khóa nào rồi mới xuất hiện lại).
+     - Mỗi mục H2, H3 cần có sự xuất hiện nhịp nhàng của từ khóa (key chính hoặc key phụ tương ứng), kết hợp lặp lại tự nhiên trong các câu trần thuật.
    - **Ép đúng tỷ lệ chuẩn SEO (Mật độ 1.5% - 2.5%)**:
      - Key chính: Xuất hiện từ 6 - 10 lần (tùy dung lượng bài 1.200 - 2.000 từ).
      - Key phụ: Mỗi key xuất hiện từ 2 - 4 lần rải đều tại các mục tương ứng.
@@ -67,7 +76,7 @@ Chi tiết quy chuẩn toàn diện được lưu trữ tại: [.agents/rules/se
    - **Không gượng ép, linh hoạt & mượt mà (Natural & Fluent Placement)**:
      - Tuyệt đối không nhồi nhét từ khóa thô cứng làm hỏng cấu trúc câu hoặc gượng gạo văn phong.
      - Từ khóa phải được hòa tan tự nhiên vào lời kể thực tế, đúng ngữ pháp tiếng Việt.
-   - **Bản đồ phân bổ đều đặn**: Mở bài (Sapo: 1 key chính trong 100 từ đầu), H2 đầu tiên (1 key chính), các H2/H3 tiếp theo phân bổ các key phụ của người dùng, Kết bài (1 key chính). Các mục còn lại không nhắm key thì tập trung vào nội dung thực tế.
+   - **Bản đồ phân bổ đều đặn**: Title (Key 1), H1 (Key 2 khác Title), Mở bài (Sapo: 1 key chính trong 100 từ đầu), H2 đầu tiên (1 key chính), các H2/H3 tiếp theo phân bổ các key phụ của người dùng trải đều trong từng đoạn, Kết bài (1 key chính kèm CTA).
 
 8. **Quy cách lập Dàn ý (Outline Format)**:
    - **Đánh số tự nhiên (Numbering)**: Tiêu đề hiển thị phải dùng dạng số tự nhiên (`1.`, `1.1.`, `1.2.`, `2.`, `2.1.`,...). **Tuyệt đối KHÔNG hiển thị ký hiệu kỹ thuật như `H2.1`, `H3.1.1`**. (Trong file Word, các mục này vẫn được gán đúng Style Heading 2, Heading 3 chuẩn SEO).
@@ -130,6 +139,7 @@ Chi tiết quy chuẩn toàn diện được lưu trữ tại: [.agents/rules/se
      - *Câu chuyển đoạn & Mở đầu*: Cấm các câu sáo rỗng thường gặp trên blog (*“Bài viết này tổng hợp toàn bộ lịch trình”*, *“Bạn chỉ cần chuẩn bị đồ cá nhân”*, *“Tự lái xe mang lại cảm giác tự do”*). Thay bằng các câu diễn đạt trải nghiệm cụ thể, độc nhất.
      - *Tiền tip & Phụ phí*: Dùng các từ thay thế tự nhiên (*“khoản thưởng bồi dưỡng tùy sự hài lòng”*, *“tiêu vặt phát sinh ngoài lề”*).
    - **Cơ chế Tự Rà Soát Trùng Lặp**: Agent chủ động rà soát từng dòng, từng câu trong bài trước khi xuất file `.docx`, đảm bảo tính độc nhất 100%, triệt tiêu hoàn toàn nguy cơ dính spin trùng lặp để người dùng có thể sử dụng ngay mà không phải sửa lại.
+
 11. **Cấu trúc Phần Mở Đầu Bài Viết DOCX (Master Header Block Format)**:
    - Mọi bài viết hoàn chỉnh xuất ra file `.docx` bắt buộc phải có cấu trúc phần đầu chuẩn hóa theo đúng thứ tự sau:
      1. **Bảng Thống kê Từ khóa (KEY & VOLUME)**:
@@ -142,9 +152,9 @@ Chi tiết quy chuẩn toàn diện được lưu trữ tại: [.agents/rules/se
      3. **Khối Thông tin SEO On-page**:
         - `Key chính: [Từ khóa chính]`
         - `Meta: [Đoạn Meta Description 140 - 155 ký tự có CTA]`
-        - `Title: [SEO Title 55 - 60 ký tự, key ở đầu, có số, từ bổ trợ, | hoặc -]`
-        - `H1: [Tiêu đề H1 - lấy từ Title hoặc Title chuẩn SEO]`
-     4. **Đoạn Mở bài (Sapo)**: Bắt đầu viết trực tiếp ngay dưới dòng `H1: ...`, độ dài 2 - 3 câu ngắn (<155 từ), chứa từ khóa chính trong 100 từ đầu tiên, giải quyết bài toán của Title.
+        - `Title: [SEO Title 55 - 60 ký tự, tối ưu Key 1 ở đầu, có số, từ bổ trợ, | hoặc -]`
+        - `H1: [Tiêu đề H1 - tối ưu Key 2 khác với Key của Title, không trùng Title]`
+     4. **Đoạn Mở bài (Sapo)**: Bắt đầu viết trực tiếp ngay dưới dòng `H1: ...`, ngắn gọn 2 - 3 câu (<155 từ), thu hút, bắt buộc chứa từ khóa chính trong 100 từ đầu tiên.
      5. **Thân bài**: Tiếp nối liền mạch bằng các heading đánh số tự nhiên: `1.`, `1.1.`, `1.2.`, `2.`, `2.1.`...
 
 ---
@@ -155,9 +165,9 @@ Quy trình chi tiết tạo Outline chuẩn SEO: [.agents/workflows/seo-outline-
 
 Khi người dùng cung cấp từ khóa và chỉ định file trong `ContentTour/*`:
 1. **Bước 1**: Đọc và trích xuất dữ liệu thực tế từ file chỉ định trong `ContentTour/*` (lịch trình, giá, dịch vụ, điểm đến).
-2. **Bước 2**: Đề xuất bộ **SEO Title** (đạt chuẩn 55-60 ký tự, dùng làm luôn Tiêu đề bài viết / Thẻ H1) & **Meta Description** (140-155 ký tự có CTA).
-3. **Bước 3**: Đề xuất **Sapo** (2-3 dòng, có key trong 100 từ đầu giải quyết vấn đề của tiêu đề).
-4. **Bước 4**: Xây dựng **Dàn ý Headings (đánh số 1., 1.1., 1.2., 2., 2.1.,...)** bám sát dữ liệu file tour, chỉ gạch đầu dòng các ý chính cốt lõi, không giải thích rườm rà dưới tiêu đề.
+2. **Bước 2**: Đề xuất bộ **SEO Title** (đạt chuẩn 55-60 ký tự, tối ưu Key 1) & **Thẻ H1** (tối ưu Key 2 khác Title, không trùng Title) & **Meta Description** (140-155 ký tự có CTA).
+3. **Bước 3**: Đề xuất **Sapo** ngắn gọn, thu hút (2-3 dòng, có key chính trong 100 từ đầu).
+4. **Bước 4**: Xây dựng **Dàn ý Headings (đánh số 1., 1.1., 1.2., 2., 2.1.,...)** bám sát dữ liệu file tour, chỉ gạch đầu dòng các ý chính cốt lõi. Phân bổ từ khóa trải đều trong từng mục, không để khoảng cách quá xa.
 5. **Bước 5**: Lập bảng Ma trận phân bổ từ khóa & format trình bày (quy hoạch tập trung ảnh, Alt text, Table/List tại đây).
 6. **Bước 6**: Tự động xuất dàn ý ra file Word **`Result/outline.docx`** (với đầy đủ style Word Heading, Bảng biểu và gạch đầu dòng trực quan) kèm bảng Pre-publish Checklist để người dùng mở xem dễ dàng trong thư mục `Result/`.
 
@@ -169,10 +179,10 @@ Tất cả sản phẩm nội dung bàn giao cho người dùng (từ Dàn ý đ
 
 | Lệnh (Command) | Thao tác thực hiện | Giới hạn bắt buộc (Constraints) |
 | :--- | :--- | :--- |
-| `/create-outline <cụm key> [file tour]` | Đọc file tour được chỉ định trong `ContentTour/*`, phân tích intent, tạo Title, Meta Des, H1, Sapo demo, Dàn ý đánh số `1.`, `1.1.` tinh gọn, ma trận từ khóa. **ĐẦU RA: Tự động xuất trực tiếp ra file `Result/outline.docx`**. | **TUYỆT ĐỐI KHÔNG VIẾT BÀI CHI TIẾT**. Phải bám sát dữ liệu file tour trong `ContentTour/*`. Chỉ tạo dàn bài và xuất ra file `Result/outline.docx`. |
+| `/create-outline <cụm key> [file tour]` | Đọc file tour được chỉ định trong `ContentTour/*`, phân tích intent, tạo Title (tối ưu Key 1), H1 (tối ưu Key 2 khác Title), Meta Des, Sapo ngắn gọn thu hút (chứa key chính trong 100 từ đầu), Dàn ý đánh số `1.`, `1.1.` tinh gọn, phân bổ key trải đều từng mục. **ĐẦU RA: Tự động xuất trực tiếp ra file `Result/outline.docx`**. | **TUYỆT ĐỐI KHÔNG VIẾT BÀI CHI TIẾT**. Phải bám sát dữ liệu file tour trong `ContentTour/*`. Chỉ tạo dàn bài và xuất ra file `Result/outline.docx`. |
 | `/update-outline <nội dung sửa>` | Đọc trực tiếp từ file `Result/outline.docx`, cập nhật theo phản hồi của người dùng, **tự động cập nhật lại file `Result/outline.docx`**. | **VẪN KHÔNG VIẾT BÀI**. Chỉ cập nhật lại dàn bài theo đúng ý kiến người dùng. |
-| `/create-post` | Đọc dàn bài trực tiếp từ file `Result/outline.docx` và đối chiếu dữ liệu file tour trong `ContentTour/*`, tiến hành viết bài hoàn chỉnh chuẩn SEO 100%. **Yêu cầu văn phong**: Không trùng lặp, giọng văn con người viết chân thực, giàu cảm xúc, câu văn ngắn gọn, dễ hiểu và kiểm duyệt 0% dấu vết AI. **ĐẦU RA: Xuất trực tiếp ra file `.docx` (Microsoft Word) trong thư mục `Result/`** (ví dụ: `Result/bai-viet.docx`). | Chỉ thực hiện khi người dùng đã duyệt dàn ý và phát lệnh này. Lưu thành file `.docx` tại thư mục `Result/`. |
-| `/create-sapo <key / H1>` | Đề xuất 3 phương án mở bài Sapo (2-3 dòng, <155 từ, có key chính trong 100 từ đầu). | Chỉ xuất 3 phương án Sapo, không viết thêm các phần khác. |
+| `/create-post` | Đọc dàn bài trực tiếp từ file `Result/outline.docx` và đối chiếu dữ liệu file tour trong `ContentTour/*`, tiến hành viết bài hoàn chỉnh chuẩn SEO 100%. Title tối ưu Key 1, H1 tối ưu Key 2 khác Title, Sapo ngắn gọn thu hút chứa Key chính, Kết bài ngắn gọn kêu gọi CTA chứa Key chính, từ khóa phân bổ trải đều toàn bài và từng mục không để cách xa nhau. **ĐẦU RA: Xuất trực tiếp ra file `.docx` (Microsoft Word) trong thư mục `Result/`** (ví dụ: `Result/bai-viet.docx`). | Chỉ thực hiện khi người dùng đã duyệt dàn ý và phát lệnh này. Lưu thành file `.docx` tại thư mục `Result/`. |
+| `/create-sapo <key / H1>` | Đề xuất 3 phương án mở bài Sapo ngắn gọn, thu hút (2-3 dòng, <155 từ, có key chính trong 100 từ đầu). | Chỉ xuất 3 phương án Sapo, không viết thêm các phần khác. |
 | `/create-title <key>` | Đề xuất 3 phương án Title (55-60 ký tự, key ở đầu, có số, từ bổ trợ, `\|` hoặc `-`). | Chỉ xuất 3 phương án Title kèm số đếm ký tự. |
 | `/create-des <key>` | Đề xuất 2 phương án Meta Description (140-155 ký tự, key ở đầu, có CTA). | Chỉ xuất 2 phương án Meta Description kèm số đếm ký tự. |
 

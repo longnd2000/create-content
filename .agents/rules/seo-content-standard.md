@@ -4,25 +4,17 @@ Tài liệu này hệ thống hóa toàn bộ quy chuẩn viết bài chuẩn SE
 
 ---
 
-## 1. TIÊU CHUẨN TIÊU ĐỀ (SEO TITLE) & TIÊU ĐỀ BÀI VIẾT (H1)
+## 1. TIÊU CHUẨN TIÊU ĐỀ (SEO TITLE)
 
-* **Quy chuẩn cốt lõi (Kinh nghiệm Content SEO thực chiến)**:
-  * **SEO Title được sử dụng trực tiếp làm Tiêu đề bài viết (Thẻ H1)**.
-  * Đồng nhất 100% giữa kết quả hiển thị trên Google (SERP) và tiêu đề to đầu tiên người đọc nhìn thấy trên bài viết, tạo cảm giác an tâm và tăng tỷ lệ Time on site.
-  * Tương thích tuyệt đối với các CMS phổ biến (WordPress, Haravan, Shopify, Webflow...) nơi trường Post Title tự động được render thành thẻ H1 duy nhất trên trang.
+* **Tối ưu 1 từ khóa riêng biệt**: SEO Title tập trung tối ưu 1 cụm từ khóa (thường là từ khóa chính có Search Intent bao quát hoặc Search Volume cao nhất do người dùng giao).
 * **Độ dài**: **55 – 60 ký tự** (kiểm soát chuẩn theo Rank Math / Yoast SEO / SERP simulator, không hiển thị số đếm ký tự trong văn bản).
 * **Độ duy nhất (Unique)**: Title phải là độc nhất, chưa từng xuất hiện trên Google (kiểm tra cú pháp `allintitle:"..."`).
 * **Cấu trúc & Vị trí Từ khóa**:
-  * Từ khóa chính (Primary Keyword) phải nằm **ngay đầu Title / H1**.
-  * Xuất hiện **1 đến 2 lần** (2 lần là tối ưu nhất nhưng phải giữ câu cú tự nhiên, tuyệt đối không chèn thêm từ xen giữa từ khóa chính).
+  * Từ khóa mục tiêu của Title phải nằm **ngay đầu Title**.
+  * Xuất hiện **1 đến 2 lần** (2 lần là tối ưu nhất nhưng phải giữ câu cú tự nhiên, tuyệt đối không chèn thêm từ xen giữa từ khóa).
   * Đan xen các **từ khóa mở rộng / bổ trợ**: *uy tín, chuyên nghiệp, giá rẻ nhất, mới nhất, trọn gói, chi tiết,...*
   * Nên chứa **con số / Listicle**: *TOP 10, 5+ cách, 3 phương pháp, 7 bước,...*
   * Ký tự phân cách các vế: Sử dụng dấu gạch đứng `|` hoặc gạch ngang `-`.
-
-> **Ví dụ mẫu (Từ khóa: `Tiếng Anh lớp 3`)**:
-> - ❌ *Kém*: Tiết lộ bí quyết giúp trẻ học tiếng Anh ở lớp 3 hay nhất *(Key không ở đầu, bị chèn từ "ở")*
-> - ⚠️ *Tạm được*: Tiết lộ bí quyết giúp trẻ học tiếng Anh lớp 3 hay nhất *(Có key nhưng không nằm ở đầu)*
-> - ✅ *Tối ưu làm Tiêu đề bài viết (H1)*: Tiếng Anh lớp 3: 5 Bí Quyết Dạy Tiếng Anh Lớp 3 Hiệu Quả | Vừa Học Vừa Chơi *(Key ở đầu, xuất hiện 2 lần tự nhiên, có số, có từ bổ trợ)*
 
 ---
 
@@ -37,29 +29,27 @@ Tài liệu này hệ thống hóa toàn bộ quy chuẩn viết bài chuẩn SE
   * Khơi gợi nỗi đau (Pain Point), kích thích trí tò mò và hứa hẹn giải pháp giá trị bên trong bài viết.
   * Đoạn cuối bắt buộc có câu kêu gọi hành động (CTA): *Click xem ngay!, Xem thêm!, Đọc ngay để biết mẹo hay!...*
 
-> **Ví dụ mẫu (Từ khóa: `Brand là gì`)**:
-> - ❌ *Kém*: Brand hay còn được gọi là thương hiệu chính là tổng hợp các giá trị vô hình của doanh nghiệp. Brand là đại diện... *(Quá 155 ký tự, trả lời ngay định nghĩa khiến người dùng không thèm click)*
-> - ✅ *Tối ưu*: Brand là gì? Brand có vai trò sống còn thế nào với doanh nghiệp? Khám phá ngay ý nghĩa thương hiệu và 5 bước xây dựng cực đỉnh. Click xem ngay! *(Độ dài chuẩn, key ở đầu, kích thích tò mò, có CTA)*
-
 ---
 
 ## 3. TIÊU CHUẨN THẺ HEADING 1 (H1) TRÊN BÀI VIẾT
 
-* **Số lượng**: Duy nhất **1 thẻ H1** trên toàn bài viết.
-* **Quy chuẩn**: **Thẻ H1 lấy chính xác 100% từ SEO Title** đã tối ưu ở Mục 1. Không tách riêng thành 2 phiên bản tiêu đề khác nhau gây lệch lạc khi tải lên CMS và gây rối cho người biên tập nội dung.
+* **Số lượng**: Duy nhất **1 thẻ H1** trên toàn bài viết, hiển thị ở đầu trang bài viết.
+* **H1 KHÁC TITLE 100% (2 KEY KHÁC NHAU)**:
+  * **H1 không trùng với SEO Title**: H1 và Title là 2 tiêu đề độc lập.
+  * **Tối ưu 2 từ khóa khác nhau**: SEO Title tối ưu 1 key, còn Thẻ H1 tối ưu **1 key riêng khác** (cả 2 key đều lấy từ danh sách từ khóa người dùng cung cấp). Điều này giúp bài viết mở rộng độ phủ tìm kiếm cho cả 2 từ khóa quan trọng.
+  * Thẻ H1 viết tự nhiên, hấp dẫn, bao quát toàn bộ nội dung bài viết, độ dài chuẩn SEO.
 
 ---
 
 ## 4. TIÊU CHUẨN ĐOẠN MỞ BÀI (SAPO / INTRO)
 
-* **Độ dài**: Khoảng 2 – 3 dòng (thường dưới 150 - 155 từ).
+* **Ngắn gọn & Thu hút**: Độ dài khoảng **2 – 3 dòng** (thường dưới 150 - 155 từ), mở đầu hấp dẫn, khơi gợi tò mò mạnh mẽ.
 * **Nhiệm vụ cốt lõi**:
-  * Giải thích, mở rộng vấn đề mà H1 đã đặt ra.
-  * Tóm tắt ngắn gọn giá trị thực tế bài viết sẽ đem lại cho người đọc.
-  * Văn phong cuốn hút, khơi gợi tò mò và thuyết phục người đọc tiếp tục cuộn xuống.
+  * Đặt vấn đề trực diện, nêu bật giá trị cốt lõi bài viết sẽ đem lại cho người đọc.
+  * Văn phong cuốn hút, thôi thúc người đọc tiếp tục cuộn xuống các mục tiếp theo.
 * **Mật độ & Vị trí từ khóa**:
-  * Chứa từ khóa chính trong **100 từ đầu tiên**.
-  * Kết hợp khéo léo: *Key chính* hoặc *Key chính + Key phụ*.
+  * Bắt buộc chứa **từ khóa chính trong 100 từ đầu tiên**.
+  * Tự nhiên, không gượng ép câu cú.
 
 ---
 
@@ -131,9 +121,10 @@ Tài liệu này hệ thống hóa toàn bộ quy chuẩn viết bài chuẩn SE
   * Đối với các heading mang tính "nội dung quan trọng", phải dồn trọng tâm triển khai kỹ, phân tích sâu, dẫn dắt người đọc thấu đáo.
 * **Đoạn cận Kết luận**:
   * H2 hoặc H3 cuối cùng trước khi vào Kết luận không được viết quá ngắn, tránh khiến người đọc nhìn vào tưởng Kết luận là một phần con của thẻ đó.
-* **Quy chuẩn Phần Kết luận (Viết thật ngắn gọn & súc tích)**:
+* **Quy chuẩn Phần Kết luận (Ngắn gọn, Kêu gọi & Chứa Key chính)**:
   * Kết bài viết **thật ngắn gọn, cô đọng (chỉ từ 2 - 3 câu ngắn hoặc dưới 50 - 80 từ)**. Tuyệt đối không kéo dài lê thê, không viết dài dòng phân tích triết lý sáo rỗng.
-  * Tóm tắt nhanh giá trị cốt lõi nhất của chuyến đi (có lặp lại 1 lần từ khóa chính), chốt lời kêu gọi hành động (CTA) rõ ràng và hiển thị hotline/website (nếu người dùng cung cấp).
+  * **Bắt buộc chứa 1 lần từ khóa chính**.
+  * **Có lời kêu gọi hành động (CTA)** rõ ràng, dứt khoát thúc đẩy chuyển đổi (kèm hotline/website nếu người dùng cung cấp).
   * **Tuyệt đối không chèn ảnh hay ghi chú note ảnh trong phần Kết luận**.
 * **Độ chính xác & Trích dẫn**:
   * Không mắc lỗi chính tả, sai ngữ pháp.
@@ -148,7 +139,7 @@ Tài liệu này hệ thống hóa toàn bộ quy chuẩn viết bài chuẩn SE
     - (Cần làm 1 ảnh phòng riêng homestay sạch sẽ, cửa sổ kính nhìn thẳng ra biển mây sớm mai ở mục này)
 ---
 
-## 7. CHIẾN LƯỢC TỪ KHÓA TOÀN BÀI & BÔI ĐỎ KIỂM SOÁT (KEYWORD STRATEGY & RED HIGHLIGHTING)
+## 7. CHIẾN LƯỢC TỪ KHÓA TOÀN BÀI & PHÂN BỔ TRẢI ĐỀU (KEYWORD STRATEGY & EVEN DISTRIBUTION)
 
 * **QUY ĐỊNH BẮT BUỘC VỀ DANH SÁCH TỪ KHÓA (STRICT KEYWORD INVENTORY & ZERO HALLUCINATION)**:
   * **Chỉ sử dụng ĐÚNG số lượng và cụm từ khóa do người dùng cung cấp**:
@@ -159,6 +150,10 @@ Tài liệu này hệ thống hóa toàn bộ quy chuẩn viết bài chuẩn SE
 * **Quy chuẩn Bôi Đỏ Từ Khóa Bắt Buộc**:
   * Toàn bộ các lần xuất hiện của **Từ khóa chính** và **Từ khóa phụ** trong file Word (`Result/bai-viet.docx`) **bắt buộc phải được bôi đỏ (`#C00000` / `#DC143C`, in đậm chữ đỏ)**.
   * Việc bôi đỏ giúp người duyệt bài nhìn thấy ngay lập tức bản đồ phân bổ từ khóa, kiểm soát tần suất xuất hiện và đối soát trực quan không bỏ sót từ khóa mục tiêu.
+* **Tỉ lệ key trải đều toàn bài & từng mục (Không để khoảng cách quá xa)**:
+  * Từ khóa cần được **phân bổ trải đều khắp bài viết và trong từng mục (H2, H3)**.
+  * **Tuyệt đối không để khoảng cách giữa các lần xuất hiện từ khóa quá xa** (cấm viết liền 200 - 300 từ mà hoàn toàn vắng bóng từ khóa rồi mới xuất hiện lại 1 lần).
+  * Mỗi mục H2, H3 cần có sự xuất hiện nhịp nhàng của từ khóa (key chính hoặc key phụ tương ứng), kết hợp lặp lại tự nhiên trong các câu trần thuật.
 * **Ép Mật độ Chuẩn SEO (Keyword Density: 1.5% – 2.5%)**:
   * Tổng mật độ toàn bộ cụm từ khóa (chính + phụ) bắt buộc nằm trong khoảng **1.5% – 2.5%** (tối đa không vượt quá 3.0%).
   * Tuyệt đối không dưới 1.0% (thiếu tín hiệu nhận diện cho công cụ tìm kiếm).
@@ -167,10 +162,12 @@ Tài liệu này hệ thống hóa toàn bộ quy chuẩn viết bài chuẩn SE
   * Từ khóa phải được đặt vào mạch câu tự nhiên, hòa hợp với ngữ cảnh thực tế của người trải nghiệm/hướng dẫn viên.
   * Nghiêm cấm việc nhét từ khóa thô thiển, chắp vá câu chữ gây sượng hoặc sai ngữ pháp.
 * **Bản đồ Phân Bổ Từ Khóa Đều Đặn**:
-  * **Mở bài (Sapo)**: 1 lần Key chính (xuất hiện trong 100 từ đầu tiên).
+  * **Title**: Tối ưu Key 1 ở đầu câu.
+  * **Thẻ H1**: Tối ưu Key 2 khác với Title.
+  * **Mở bài (Sapo)**: 1 lần Key chính (xuất hiện trong 100 từ đầu tiên, ngắn gọn thu hút).
   * **H2 đầu tiên**: 1 lần Key chính.
-  * **Các H2/H3 tiếp theo**: Phân bổ linh hoạt các Key phụ người dùng cung cấp. Các mục còn lại không nhắm key thì để dấu `-` hoặc không chèn key.
-  * **Kết bài (Conclusion)**: 1 lần Key chính đúc kết giá trị và kêu gọi hành động (CTA).
+  * **Các H2/H3 tiếp theo**: Phân bổ linh hoạt các Key phụ người dùng cung cấp trải đều từng đoạn, không để cách xa nhau.
+  * **Kết bài (Conclusion)**: 1 lần Key chính đúc kết giá trị và kêu gọi hành động (CTA ngắn gọn).
 
 ---
 
@@ -188,11 +185,11 @@ Mọi bài viết xuất bản ra file Word (`Result/bai-viet.docx`) bắt buộ
 3. **Khối Thông tin SEO On-page**:
    - `Key chính: [Từ khóa chính]`
    - `Meta: [Nội dung Meta Description 140 - 155 ký tự có CTA]`
-   - `Title: [Nội dung SEO Title 55 - 60 ký tự, key ở đầu, có số, từ bổ trợ]`
-   - `H1: [Thẻ H1 - đồng nhất với SEO Title]`
+   - `Title: [Nội dung SEO Title 55 - 60 ký tự, tối ưu Key 1 ở đầu, có số, từ bổ trợ]`
+   - `H1: [Thẻ H1 - tối ưu Key 2 khác với Key của Title, không trùng Title]`
 4. **Đoạn Mở bài (Sapo)**:
    - Bắt đầu trực tiếp ngay dưới dòng `H1: ...`.
-   - Độ dài: 2 - 3 câu ngắn (<155 từ), chứa từ khóa chính trong 100 từ đầu tiên, giải quyết bài toán của Title.
+   - Ngắn gọn 2 - 3 câu (<155 từ), thu hút, bắt buộc chứa từ khóa chính trong 100 từ đầu tiên.
 5. **Thân bài**: Tiếp nối bằng các heading đánh số tự nhiên: `1.`, `1.1.`, `1.2.`, `2.`, `2.1.`...
 
 ---
@@ -202,14 +199,15 @@ Mọi bài viết xuất bản ra file Word (`Result/bai-viet.docx`) bắt buộ
 | Hạng mục | Tiêu chuẩn đạt yêu cầu | Trạng thái |
 | :--- | :--- | :---: |
 | **Header Block DOCX** | Bảng KEY & VOLUME (nền vàng), Check spin, Check AI, Key chính, Meta, Title, H1 | [ ] |
-| **Title / H1** | 55 - 60 ký tự, Key ở đầu (1-2 lần), có số, từ bổ trợ, dấu \| hoặc -, độc nhất | [ ] |
+| **Title** | 55 - 60 ký tự, tối ưu Key 1 ở đầu, có số, từ bổ trợ, dấu \| hoặc -, độc nhất | [ ] |
+| **H1** | Khác Title 100%, tối ưu Key 2 khác với Title, bao quát nội dung bài | [ ] |
 | **Description** | 140 - 155 ký tự, Key chính ở đầu, có CTA kích thích click, không lộ kết quả | [ ] |
-| **Sapo** | 2 - 3 câu ngắn (<155 từ), giải quyết Title, Key chính xuất hiện trong 100 từ đầu | [ ] |
+| **Sapo** | Ngắn gọn 2 - 3 câu (<155 từ), thu hút, Key chính xuất hiện trong 100 từ đầu | [ ] |
 | **Headings** | Đánh số tự nhiên (1., 1.1.), ≥4 H2, mỗi H2 có ≥2 H3; ngắn gọn <60 ký tự; H2 đầu có Key chính | [ ] |
 | **Thân bài** | Câu ngắn 10-15 từ, đoạn 1-3 câu, cấm hoa mỹ sáo rỗng, có bảng/list, số liệu chuẩn | [ ] |
-| **Mật độ Key** | Đạt 1.5% - 3.0%, in đậm từ khóa quan trọng, phân bổ rải đều không nhồi nhét | [ ] |
-| **Hình ảnh** | Mỗi 250 từ hoặc mỗi H2/H3 có 1 ảnh liên quan kèm Alt text | [ ] |
-| **Kết bài** | Có Key chính, tóm tắt giải pháp và có Call To Action rõ ràng | [ ] |
+| **Mật độ & Trải đều Key** | Đạt 1.5% - 2.5%, trải đều toàn bài và từng mục, không để khoảng cách quá xa | [ ] |
+| **Hình ảnh** | Mỗi 250 từ hoặc mỗi H2/H3 có 1 ảnh liên quan kèm Alt text (Kết bài KHÔNG có ảnh) | [ ] |
+| **Kết bài** | Ngắn gọn (<50-80 từ), có Key chính, có Call To Action rõ ràng, không có ảnh/note ảnh | [ ] |
 
 ---
 

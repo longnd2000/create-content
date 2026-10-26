@@ -27,20 +27,21 @@ description: Đọc dàn bài đã duyệt từ file Result/outline.docx và ti�
 2. **Triển Khai Viết Nội Dung Chuẩn SEO & Giọng Văn Người Thật (BẮT BUỘC TUÂN THỦ)**:
    - **CẤU TRÚC PHẦN MỞ ĐẦU BÀI VIẾT (MASTER HEADER BLOCK FORMAT)**:
      - Mọi file Word bài viết bắt buộc bắt đầu bằng đúng thứ tự chuẩn hóa:
-       1. **Bảng Thống kê Từ khóa**: Cột `KEY` và Cột `VOLUME` (bảng nền trắng, chữ màu đen; không tô màu ô, không dùng màu chữ; có thể in hoa/in đậm phần tiêu đề cột để dễ đọc; Cột VOLUME căn giữa).
-       2. Dòng `Check spin:` (chừa trống để ghi nhận)
-       3. Dòng `Check AI:` (chừa trống để ghi nhận)
-       4. Dòng `Key chính: [Từ khóa chính]`
-       5. Dòng `Meta: [Nội dung Meta Description]`
-       6. Dòng `Title: [Nội dung SEO Title]`
-       7. Dòng `H1: [Nội dung Thẻ H1 - đồng nhất với SEO Title]`
-     - Ngay bên dưới dòng `H1:` là Đoạn mở bài (Sapo) 2 - 3 câu ngắn. Tiếp sau đó là các Heading thân bài `1.`, `1.1.`...
-   - **TIÊU ĐỀ BÀI VIẾT (HEADING 1) = SEO TITLE**:
-     - Tiêu đề to đầu tiên của bài viết (Heading 1) **BẮT BUỘC sử dụng chính xác là SEO Title** (chuẩn 55 - 60 ký tự). Không tạo phiên bản H1 khác.
+       1. **Bảng Thống kê Từ khóa**: Cột KEY và Cột VOLUME (bảng nền trắng, chữ màu đen; không tô màu ô, không dùng màu chữ; có thể in hoa/in đậm phần tiêu đề cột để dễ đọc; Cột VOLUME căn giữa).
+       2. Dòng Check spin: (chừa trống để ghi nhận)
+       3. Dòng Check AI: (chừa trống để ghi nhận)
+       4. Dòng Key chính: [Từ khóa chính]
+       5. Dòng Meta: [Nội dung Meta Description 140 - 155 ký tự có CTA]
+       6. Dòng Title: [Nội dung SEO Title 55 - 60 ký tự, tối ưu Key 1]
+       7. Dòng H1: [Nội dung Thẻ H1 55 - 60 ký tự, tối ưu Key 2 - KHÁC 100% so với SEO Title]
+     - Ngay bên dưới dòng H1: là Đoạn mở bài (Sapo) **ngắn gọn 2 - 3 câu (<155 từ), thu hút, bắt buộc chứa Key chính trong 100 từ đầu** và giải quyết trực diện vấn đề của tiêu đề. Tiếp sau đó là các Heading thân bài 1., 1.1....
+   - **THẺ H1 KHÁC BIỆT 100% SO VỚI SEO TITLE (TỐI ƯU 2 KEY KHÁC NHAU)**:
+     - **SEO Title**: Chuẩn 55 - 60 ký tự, tối ưu **Key 1** ở đầu, có số, từ bổ trợ, dấu | hoặc -, độc nhất và thu hút click từ Google.
+     - **Thẻ H1 (Tiêu đề chính bài viết trên trang)**: Chuẩn 55 - 60 ký tự, **KHÁC 100% so với SEO Title**, tối ưu **Key 2** (chọn từ danh sách từ khóa người dùng giao).
    - **PHẦN CUỐI BÀI BẮT BUỘC LÀ KẾT LUẬN (VIẾT THẬT NGẮN GỌN & CÔ ĐỌNG)**:
      - Heading cuối cùng của bài phải là **Kết luận**. Sau phần Kết luận không thêm heading hoặc nội dung triển khai mới.
      - **YÊU CẦU ĐỘ DÀI KẾT BÀI**: Viết **thật ngắn gọn, cô đọng (chỉ từ 2 - 3 câu ngắn hoặc tối đa 50 - 80 từ)**. Tuyệt đối không kéo dài lê thê, không viết dài dòng, không thêm thắt các đoạn tổng kết phân tích triết lý rườm rà.
-     - Kết luận phải gồm đủ 3 lớp nội dung tinh gọn: (1) Kết thúc và tóm tắt nhanh giá trị cốt lõi nhất của chuyến đi (có lặp lại 1 lần từ khóa chính), (2) Lời kêu gọi hành động (Call To Action) rõ ràng, (3) Thông tin website và số điện thoại nếu người dùng gửi kèm theo lệnh `/create-post`.
+     - Kết luận phải gồm đủ 3 lớp nội dung tinh gọn: (1) Kết thúc và tóm tắt nhanh giá trị cốt lõi nhất của chuyến đi (**bắt buộc chứa 1 lần từ khóa chính**), (2) **Lời kêu gọi hành động (Call To Action) rõ ràng, dứt khoát**, (3) Thông tin website và số điện thoại nếu người dùng gửi kèm theo lệnh /create-post.
      - Chỉ được chèn đúng website, số điện thoại và thông tin liên hệ người dùng cung cấp. Nếu lệnh không có thông tin liên hệ, dùng CTA chung và không tự bịa website, hotline, email hoặc địa chỉ.
      - **Tuyệt đối không chèn ảnh hay ghi chú note ảnh trong phần Kết luận**.
    - **TRỰC DIỆN, ĐỦ Ý & KHÔNG LAN MAN (Direct, Lean & Comprehensive)**:
@@ -98,8 +99,9 @@ description: Đọc dàn bài đã duyệt từ file Result/outline.docx và ti�
      - Nội dung thường và các cấp Heading phụ: Google Sans Flex **13px**. Heading 1: Google Sans Flex **16px**, in đậm và căn giữa.
      - Các đoạn văn, đoạn Sapo, nội dung danh sách và phần diễn giải trong bảng phải căn đều hai bên khi phù hợp; không tự ý dùng màu hoặc kiểu chữ trang trí.
      - Trước khi xuất file, Agent phải rà soát và loại bỏ toàn bộ emoji, icon, ký tự trang trí không phù hợp; đồng thời kiểm tra font, cỡ chữ, căn lề, kiểu đậm và màu chữ của từng nhóm nội dung.
-   - **ÉP ĐÚNG TỶ LỆ KEY VÀ PHÂN BỔ MƯỢT MÀ, KHÔNG GƯỢNG ÉP**:
+   - **ÉP ĐÚNG TỶ LỆ KEY VÀ PHÂN BỔ MƯỢT MÀ, TRẢI ĐỀU TOÀN BÀI**:
      - Mật độ tổng cụm từ khóa chuẩn SEO: **1.5% - 2.5%** (tối đa 3.0%, tuyệt đối không dưới 1.0% và không quá 3.5%).
+     - **Tỉ lệ từ khóa phải trải đều trong toàn bài và trong từng mục (H2, H3)**: Phân bổ từ khóa tự nhiên vào từng phân đoạn nội dung. **Tuyệt đối không để khoảng cách quá xa mới xuất hiện key một lần**, tránh hiện tượng đầu bài hay cuối bài bị dồn cục từ khóa trong khi thân bài thiếu hụt tín hiệu SEO.
      - Tích hợp từ khóa mềm mại, tự nhiên, đúng ngữ pháp; cấm nhồi nhét thô cứng làm gượng gạo câu văn.
    - **QUY CHUẨN MÔ TẢ HÌNH ẢNH NGẮN GỌN & DỄ HIỂU (SIMPLE IMAGE NOTES)**:
      - Trung bình mỗi **250 - 350 từ** hoặc mỗi **H2/H3 phù hợp** chèn một dòng ghi chú mô tả ảnh **ngắn gọn, đơn giản, dễ hiểu**, đặt trong ngoặc đơn (...) ngay tại vị trí cần chèn ảnh.
