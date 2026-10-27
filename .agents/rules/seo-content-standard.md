@@ -147,9 +147,9 @@ Tài liệu này hệ thống hóa toàn bộ quy chuẩn viết bài chuẩn SE
     * Tuyệt đối **KHÔNG tự ý bịa đặt, suy diễn, mở rộng hay thêm bớt** bất kỳ từ khóa nào khác (nghiêm cấm tự chế "từ khóa liên quan", "từ khóa LSI tự nghĩ", "từ khóa phụ tự sinh").
     * Toàn bộ Dàn ý, Bảng KEY & VOLUME, Ma trận phân bổ từ khóa và Thân bài viết **CHỈ ĐƯỢC PHÉP CHỨA VÀ PHÂN BỔ ĐÚNG CÁC CỤM KEY NGƯỜI DÙNG ĐÃ GIAO**.
     * Trong Bảng Ma trận phân bổ từ khóa: Cột "Từ khóa mục tiêu" **CHỈ ĐƯỢC PHÉP** điền các từ khóa nằm trong danh sách người dùng đã cung cấp. Các phần nội dung không chứa từ khóa thì để dấu `-` hoặc ghi rõ không chèn key, tuyệt đối không tự bịa ra từ khóa khác để nhét vào bảng.
-* **Quy chuẩn Bôi Đỏ Từ Khóa Bắt Buộc**:
-  * Toàn bộ các lần xuất hiện của **Từ khóa chính** và **Từ khóa phụ** trong file Word (`Result/bai-viet.docx`) **bắt buộc phải được bôi đỏ (`#C00000` / `#DC143C`, in đậm chữ đỏ)**.
-  * Việc bôi đỏ giúp người duyệt bài nhìn thấy ngay lập tức bản đồ phân bổ từ khóa, kiểm soát tần suất xuất hiện và đối soát trực quan không bỏ sót từ khóa mục tiêu.
+* **Tuyệt Đối KHÔNG Bôi Đỏ Hay Tô Màu Từ Khóa (Giữ Chữ Đen Tự Nhiên)**:
+  * Mọi lần xuất hiện của **Từ khóa chính** và **Từ khóa phụ** trong file Word (`Result/bai-viet.docx`) phải để dạng văn bản thông thường: **chữ màu đen mặc định, không bôi đỏ, không tô màu nền, không in đậm** chỉ vì đó là từ khóa (người dùng sẽ tự kiểm tra sự phân bổ từ khóa).
+  * Màu đỏ (`#C00000`) chỉ áp dụng duy nhất cho các ghi chú mô tả ảnh đặt trong ngoặc đơn `(...)` để dễ nhận diện vị trí chèn ảnh.
 * **Tỉ lệ key trải đều toàn bài & từng mục (Không quá dày, không quá gần, không để khoảng cách quá xa)**:
   * Từ khóa cần được **phân bổ trải đều khắp bài viết và trong từng mục (H2, H3)** một cách nhịp nhàng.
   * **Mật độ không quá dày & không xuất hiện quá gần nhau**: Tuyệt đối không nhồi nhiều từ khóa liên tiếp trong cùng 1 câu hoặc 2 câu liền kề; không để từ khóa lặp lại dồn dập khiến người đọc thấy ngột ngạt hoặc spam.

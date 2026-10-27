@@ -9,8 +9,7 @@ description: Fix và tối ưu bài viết có sẵn trong ContentTour/* chuẩn
 * Khi người dùng nhập lệnh `/fix-post [tên file hoặc đường dẫn trong ContentTour/*]`:
   * **NGUỒN DỮ LIỆU ĐẦU VÀO**: Lấy trực tiếp bài viết do người dùng đã chuẩn bị sẵn trong thư mục `ContentTour/*` (file `.docx`, `.txt`...).
   * **MỤC TIÊU CỐT LÕI**: Nội dung trong file đã được kiểm duyệt về thông tin thực tế, lịch trình, giá cả. Tác vụ của Agent là **chỉnh sửa, tối ưu (fix) bài viết để đạt chuẩn SEO tuyệt đối** mà **KHÔNG LÀM MỚI LẠI TOÀN BỘ BÀI** và **KHÔNG XÁO TRỘN CÁC FORMAT ĐÃ CÓ**.
-  * **BẢO TOÀN DỮ LIỆU NGUỒN**: File gốc trong `ContentTour/*` chỉ đọc, **tuyệt đối không chỉnh sửa hay ghi đè**.
-  * **KẾT QUẢ ĐẦU RA**: Xuất bản trực tiếp ra file Word `.docx` trong thư mục `Result/` (ví dụ: `Result/[slug]-fixed.docx` hoặc `Result/bai-viet.docx`).
+  * **KẾT QUẢ ĐẦU RA (DUY NHẤT 1 FILE)**: Xuất bản trực tiếp ra **DUY NHẤT 1 file Word `.docx`** trong thư mục `Result/` theo định dạng `Result/[slug]-fixed.docx` (ví dụ: `Result/tour-trung-khanh-thanh-do-fixed.docx`). Tuyệt đối KHÔNG xuất ra 2 file, không tạo thêm bản sao `bai-viet.docx` hay file phụ nào khác.
 
 ---
 
@@ -74,11 +73,12 @@ description: Fix và tối ưu bài viết có sẵn trong ContentTour/* chuẩn
    - Thêm/bớt/thay thế từ ngữ để đưa từ khóa vào các vị trí còn thiếu hoặc giãn khoảng cách giữa các từ khóa đang bị quá dày.
    - Chuẩn hóa văn phong mượt mà, gãy gọn, tự nhiên.
 
-4. **Bước 4: Đóng Gói Xuất Ra Thư Mục Result/**:
-   - Xuất bản trực tiếp ra file Word `.docx` trong `Result/`:
+4. **Bước 4: Đóng Gói Xuất Ra DUY NHẤT 1 File Trong Result/**:
+   - Xuất bản trực tiếp ra **DUY NHẤT 1 file Word `.docx`** trong `Result/`:
      ```powershell
      python .agents/scripts/md_to_docx.py [file-tam.md] Result/[ten-file-fixed].docx
      ```
+   - Tuyệt đối không xuất thêm file thứ 2 như `bai-viet.docx`. Chỉ lưu đúng 1 file kết quả duy nhất.
    - Dọn dẹp sạch sẽ mọi file trung gian `.md`.
    - File gốc trong `ContentTour/*` được bảo toàn nguyên vẹn 100%.
 

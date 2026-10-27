@@ -8,7 +8,7 @@ from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml import OxmlElement, parse_xml
 from docx.oxml.ns import qn, nsdecls
 
-RED_KEYWORD_COLOR = RGBColor(192, 0, 0) # #C00000 - Màu đỏ chuẩn thẩm định phân bổ SEO
+RED_IMAGE_NOTE_COLOR = RGBColor(192, 0, 0) # #C00000 - Màu đỏ dành riêng cho ghi chú ảnh
 
 def set_cell_background(cell, fill_hex):
     """Đặt màu nền cho ô trong bảng"""
@@ -202,7 +202,10 @@ def convert_md_to_docx(md_path, docx_path, keywords=None):
                     set_cell_margins(cell, top=80, bottom=80, left=120, right=120)
 
                     if is_header:
-                        set_cell_background(cell, "FFFFFF")
+                        if is_key_vol_table:
+                            set_cell_background(cell, "FFFF00")
+                        else:
+                            set_cell_background(cell, "FFFFFF")
                         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
                         run = p.add_run(cell_text)
                         run.bold = True
@@ -267,7 +270,7 @@ def convert_md_to_docx(md_path, docx_path, keywords=None):
             
             inline(p, heading_text)
             
-            # Custom font, cỡ chữ và màu đen cho Heading
+            # Custom font, cỡ chữ và màu cho Heading
             for r in p.runs:
                 r.bold = True
                 if level == 1:
@@ -362,7 +365,7 @@ def convert_md_to_docx(md_path, docx_path, keywords=None):
                         r.font.name = 'Google Sans Flex'
                         r.font.size = Pt(13)
                         r.italic = True
-                        r.font.color.rgb = RED_KEYWORD_COLOR
+                        r.font.color.rgb = RED_IMAGE_NOTE_COLOR
             continue
 
         # Xử lý ghi chú hình ảnh ngắn gọn dạng text thường trong ngoặc đơn, màu đỏ
@@ -380,7 +383,7 @@ def convert_md_to_docx(md_path, docx_path, keywords=None):
                 r.font.name = 'Google Sans Flex'
                 r.font.size = Pt(13)
                 r.italic = True
-                r.font.color.rgb = RED_KEYWORD_COLOR
+                r.font.color.rgb = RED_IMAGE_NOTE_COLOR
             i += 1
             continue
 
