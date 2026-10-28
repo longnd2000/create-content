@@ -1,3 +1,4 @@
+from docx.opc.constants import RELATIONSHIP_TYPE
 import re
 import sys
 import os
@@ -37,8 +38,32 @@ def set_cell_margins(cell, top=100, bottom=100, left=150, right=150):
     tcMar = parse_xml(f'<w:tcMar {nsdecls("w")}><w:top w:w="{top}" w:type="dxa"/><w:bottom w:w="{bottom}" w:type="dxa"/><w:left w:w="{left}" w:type="dxa"/><w:right w:w="{right}" w:type="dxa"/></w:tcMar>')
     tcPr.append(tcMar)
 
+def add_hyperlink(paragraph, url, text, color="004B91", underline=True, is_bold=False):
+    """Thêm liên kết (hyperlink) có thể click trực tiếp vào đoạn văn Word."""
+    try:
+        part = paragraph.part
+        r_id = part.relate_to(url, RELATIONSHIP_TYPE.HYPERLINK, is_external=True)
+        hyperlink = parse_xml(f'<w:hyperlink xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" r:id="{r_id}" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"/>')
+        new_run = parse_xml(f'<w:r xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"/>')
+        b_tag = '<w:b/>' if is_bold else ''
+        u_tag = '<w:u w:val="single"/>' if underline else ''
+        new_rPr = parse_xml(f'<w:rPr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:rFonts w:ascii="Google Sans Flex" w:hAnsi="Google Sans Flex"/><w:sz w:val="26"/><w:color w:val="{color}"/>{b_tag}{u_tag}</w:rPr>')
+        new_run.append(new_rPr)
+        new_t = parse_xml(f'<w:t xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">{text}</w:t>')
+        new_run.append(new_t)
+        hyperlink.append(new_run)
+        paragraph._p.append(hyperlink)
+    except Exception:
+        run = paragraph.add_run(text)
+        run.font.name = 'Google Sans Flex'
+        run.font.size = Pt(13)
+        run.font.color.rgb = RGBColor(0, 75, 145)
+        run.underline = True
+        if is_bold:
+            run.bold = True
+
 def parse_inline_formatting(paragraph, text, kw_pattern=None, kw_set=None):
-    """Xử lý in đậm (**text**), in nghiêng (*text*) và code (`text`). Key luôn giữ định dạng chữ đen thông thường."""
+    """Xử lý in đậm (**text**), in nghiêng (*text*), code (`text`) và liên kết ([text](url)). Key luôn giữ định dạng chữ đen thông thường."""
     def add_segment(seg, is_bold=False, is_italic=False, is_code=False):
         if not seg:
             return
@@ -72,14 +97,30 @@ def parse_inline_formatting(paragraph, text, kw_pattern=None, kw_set=None):
             if is_italic:
                 run.italic = True
 
-    tokens = re.split(r'(\*\*.*?\*\*|\*.*?\*|`.*?`)', text)
+    tokens = re.split(r'(\[.*?\]\(https?://[^\s\)]+\)|\*\*.*?\*\*|\*.*?\*|`.*?`)', text)
     for token in tokens:
         if not token:
             continue
-        if token.startswith('**') and token.endswith('**'):
-            add_segment(token[2:-2], is_bold=True)
+        link_m = re.match(r'\[(.*?)\]\((https?://[^\s\)]+)\)', token)
+        if link_m:
+            a_text, url = link_m.groups()
+            add_hyperlink(paragraph, url, a_text)
+        elif token.startswith('**') and token.endswith('**'):
+            inner = token[2:-2]
+            inner_link = re.match(r'\[(.*?)\]\((https?://[^\s\)]+)\)', inner)
+            if inner_link:
+                a_text, url = inner_link.groups()
+                add_hyperlink(paragraph, url, a_text, is_bold=True)
+            else:
+                add_segment(inner, is_bold=True)
         elif token.startswith('*') and token.endswith('*'):
-            add_segment(token[1:-1], is_italic=True)
+            inner = token[1:-1]
+            inner_link = re.match(r'\[(.*?)\]\((https?://[^\s\)]+)\)', inner)
+            if inner_link:
+                a_text, url = inner_link.groups()
+                add_hyperlink(paragraph, url, a_text, is_bold=False)
+            else:
+                add_segment(inner, is_italic=True)
         elif token.startswith('`') and token.endswith('`'):
             add_segment(token[1:-1], is_code=True)
         else:
@@ -141,6 +182,19 @@ def convert_md_to_docx(md_path, docx_path, keywords=None):
                 kc = s.split(':', 1)[1].strip()
                 if kc and kc not in target_keywords:
                     target_keywords.append(kc)
+
+    # Tự động rà soát chống trùng lặp Title và H1
+    found_title = ""
+    found_h1 = ""
+    for line in lines:
+        s = line.strip()
+        if re.match(r'^Title:\s*', s, flags=re.IGNORECASE):
+            found_title = re.sub(r'^Title:\s*', '', s, flags=re.IGNORECASE).strip()
+        elif re.match(r'^H1:\s*', s, flags=re.IGNORECASE):
+            found_h1 = re.sub(r'^H1:\s*', '', s, flags=re.IGNORECASE).strip()
+
+    if found_title and found_h1 and found_title.lower() == found_h1.lower():
+        print(f"[CẢNH BÁO LỖI SEO]: Title và H1 đang trùng lặp 100% ('{found_title}')! Quy chuẩn bắt buộc Title và H1 phải khác nhau 100%.")
 
     # Sắp xếp từ khóa theo độ dài giảm dần để ưu tiên cụm dài trước
     target_keywords.sort(key=len, reverse=True)

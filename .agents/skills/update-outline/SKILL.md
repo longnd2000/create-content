@@ -24,7 +24,7 @@ description: Cập nhật, chỉnh sửa dàn bài hiện tại dựa trên ph�
 
 2. **Phân tích Yêu Cầu Chỉnh Sửa Của Người Dùng**:
    - Xác định chính xác các điểm cần thay đổi (ví dụ: đổi Title, thêm 1 H2 về giá cả, bỏ H3 không cần thiết, đổi vị trí bảng so sánh...).
-   - Đảm bảo các thay đổi mới vẫn tuân thủ nghiêm ngặt quy chuẩn SEO (H2 đầu có key chính, Title 55-60 ký tự, mỗi H2 ≥2 H3, v.v.).
+   - Đảm bảo các thay đổi mới vẫn tuân thủ nghiêm ngặt quy chuẩn SEO (H2 đầu có key chính, Title 55-60 ký tự, mỗi H2 ≥2 H3, H2/H3 khai thác ý mới mẻ độc đáo, Sapo nhắc thương hiệu, Kết luận có CTA số Zalo + thương hiệu...).
 
 3. **Cập Nhật Cấu Trúc & Ma Trận Phân Bổ**:
    - Điều chỉnh lại các thẻ Headings, kế hoạch ảnh, bảng biểu và ma trận từ khóa.

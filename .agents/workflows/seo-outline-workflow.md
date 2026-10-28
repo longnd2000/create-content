@@ -8,21 +8,32 @@ Quy trình này hướng dẫn chi tiết từng bước mà Agent thực hiện
 
 ```mermaid
 flowchart TD
-    A[Nhận Cụm Từ Khóa & Xác định Search Intent] --> B[Giai đoạn 1: Tạo Bộ Title & Meta Description]
-    B --> C[Giai đoạn 2: Tạo H1 & Khung Sapo]
-    C --> D[Giai đoạn 3: Xây dựng Dàn ý Phân cấp H2 - H3 - H4]
-    D --> E[Giai đoạn 4: Thiết lập Bản đồ Content Format, Ảnh & Alt Text]
-    E --> F[Giai đoạn 5: Xuất Bảng Ma trận Từ khóa & Checklist Thẩm định]
-    F --> G[Giai đoạn 6: Xuất bản ra File Word Result/outline.docx]
+    A[Nhận Cụm Từ Khóa & Tag Định Dạng] --> B{Xác định dạng bài}
+    B -- Tag [tour] --> C1[Đọc dữ liệu tour từ ContentTour/*]
+    B -- Tag [blog] --> C2[Search Web khảo sát Dàn ý TOP 10 Google & Tìm ý mới H2/H3]
+    C1 --> D[Giai đoạn 1: Tạo Bộ Title & Meta Description]
+    C2 --> D
+    D --> E[Giai đoạn 2: Tạo H1 & Khung Sapo có Thương Hiệu]
+    E --> F[Giai đoạn 3: Xây dựng Dàn ý Phân cấp H2 - H3 - H4]
+    F --> G[Giai đoạn 4: Thiết lập Bản đồ Content Format, Ảnh & Alt Text]
+    G --> H[Giai đoạn 5: Xuất Bảng Ma trận Từ khóa & Checklist Thẩm định]
+    H --> I[Giai đoạn 6: Xuất bản ra File Word Result/outline.docx]
 ```
 
 ---
 
 ## CHI TIẾT CÁC BƯỚC TRIỂN KHAI
 
-### BƯỚC 1: TIẾP NHẬN & PHÂN TÍCH TỪ KHÓA (STRICT KEYWORD INVENTORY)
-1. **Phân tích Search Intent**: Người dùng đang tìm kiếm điều gì? (Thông tin / Hướng dẫn cách làm / So sánh / Mua sắm dịch vụ).
-2. **Quy định bắt buộc về danh sách từ khóa**:
+### BƯỚC 1: TIẾP NHẬN TỪ KHÓA & PHÂN LOẠI DẠNG BÀI VIẾT ([tour] vs [blog])
+1. **Nhận diện dạng bài viết qua tag**:
+   - **Tag `[tour]` (hoặc mặc định có file tour)**: Bài viết bán/giới thiệu tour du lịch.
+     * Mở và đọc dữ liệu thực tế từ file trong thư mục `ContentTour/*` (lịch trình mốc giờ, bảng giá, quyền lợi bao gồm/loại trừ, lưu ý khi đi tour).
+     * Giữ cấu trúc tour chuẩn hiện tại.
+   - **Tag `[blog]`**: Bài viết cẩm nang, chia sẻ kinh nghiệm, kiến thức, review du lịch.
+     * **Khảo sát dàn ý của 10 đối thủ đầu tiên (TOP 10 SERP Google)**: Dùng công cụ `search_web` tìm kiếm từ khóa chính, tổng hợp khung heading (H2, H3) của 10 bài viết đứng đầu Google.
+     * **Sắp xếp hợp lý, giải quyết đúng và đủ Intent người đọc**: Đánh giá toàn diện Search Intent, gom nhóm các ý cốt lõi, loại bỏ nội dung rác/thừa, tổ chức các đề mục theo mạch tư duy logic, dễ hiểu.
+     * **Tìm ý mới mẻ trong thẻ H2, H3 (Content Freshness & Information Gain)**: Chủ động tìm tòi và bổ sung các góc nhìn mới lạ, kinh nghiệm thực chiến độc đáo mà 10 đối thủ chưa có hoặc chưa làm rõ (góc check-in độc lạ, khung giờ vàng săn ảnh, quán ăn ngõ ngách bản địa, mẹo tránh đông, kinh nghiệm tiết kiệm chi phí...).
+2. **Quy định bắt buộc về danh sách từ khóa (Strict Keyword Inventory)**:
    - **Chỉ sử dụng đúng số lượng và cụm từ khóa do người dùng cung cấp**.
    - Tuyệt đối **KHÔNG tự ý bịa đặt, suy diễn, mở rộng hay thêm bớt** bất kỳ từ khóa nào khác (nghiêm cấm tự thêm "từ khóa liên quan", "từ khóa LSI tự nghĩ", "từ khóa phụ tự sinh").
    - Xác định rõ vai trò: Key chính (Key có Search Intent bao quát hoặc Volume cao nhất), các Key phụ (các cụm từ khóa còn lại trong danh sách người dùng đưa). Cột "Từ khóa mục tiêu" trong Ma trận phân bổ chỉ chứa các key này, các mục không chèn key thì để dấu `-`.
@@ -43,13 +54,18 @@ flowchart TD
 ---
 
 ### BƯỚC 3: XÁC LẬP TIÊU ĐỀ BÀI VIẾT (H1) & KHUNG MỞ BÀI (SAPO)
-* **Heading 1 (H1) - KHÁC TITLE 100%**:
-  - Tối ưu 1 cụm từ khóa (Key 2) **hoàn toàn khác với từ khóa của SEO Title** (được chọn từ danh sách từ khóa người dùng cung cấp).
-  - Tuyệt đối không sao chép nguyên văn Title làm H1.
-  - Viết tự nhiên, hấp dẫn, bao quát toàn bài viết, chuẩn SEO.
-* **Định hướng Sapo (Ngắn gọn & Thu hút)**:
+* **Heading 1 (H1) - BẮT BUỘC KHÁC TITLE 100% (NGHIÊM CẤM TRÙNG LẶP DƯỚI MỌI HÌNH THỨC)**:
+  - H1 và Title là 2 tiêu đề độc lập hoàn toàn, tuyệt đối không được dùng chung câu chữ hay sao chép nguyên văn của nhau.
+  - **Khi có ≥ 2 từ khóa**: H1 tối ưu **Key 2** (hoàn toàn khác Key 1 của Title, chọn từ danh sách người dùng cấp).
+  - **Khi CHỈ CÓ 1 TỪ KHÓA DUY NHẤT (Single Keyword)**: Title và H1 **VẪN BẮT BUỘC PHẢI KHÁC NHAU 100%**:
+    * Cùng chứa từ khóa chính đó, nhưng khác biệt hoàn toàn về cấu trúc câu, từ ngữ bổ trợ và góc giật tít.
+    * **SEO Title**: Thiên về kích thích CTR, bán tour/dịch vụ/lịch trình (Key ở đầu + số ngày đêm/giá tour + dấu `|` hoặc `-`). Ví dụ: `Tour Trùng Khánh Lệ Giang Shangrila 6N5Đ | Giá Tốt Trọn Gói`.
+    * **Thẻ H1**: Thiên về cẩm nang trải nghiệm, khám phá thực tế, bao quát toàn bài (Dùng động từ/cấu trúc khác biệt như: "Khám Phá...", "Kinh Nghiệm Đi...", "Lịch Trình Chi Tiết..."). Ví dụ: `Khám Phá Tour Trùng Khánh Lệ Giang Shangrila Chi Tiết Từ A-Z`.
+  - **Cơ chế Tự Rà Soát (Self-Check Validation)**: Trước khi xuất dàn bài ra file Word, Agent bắt buộc đối chiếu Title và H1. Nếu phát hiện trùng nhau hoặc giống nhau >70%, Agent xem đây là lỗi nghiêm trọng và phải viết lại H1 ngay lập tức.
+* **Định hướng Sapo (Ngắn gọn, Thu hút & Nhắc Thương Hiệu)**:
   - 2 - 3 dòng (dưới 155 từ), mở đầu hấp dẫn, khơi gợi tò mò.
   - Chứa từ khóa chính ngay trong 100 từ đầu tiên, giải quyết bài toán của Title và H1.
+  - **Khéo léo nhắc tên thương hiệu của công ty** ngay trong đoạn mở đầu một cách tự nhiên.
 
 ---
 
@@ -63,6 +79,9 @@ Tuân thủ nghiêm ngặt các quy tắc:
    - Trong mỗi phân đoạn thân bài của 1 H3 chỉ nhắm tối đa 1 key.
 4. **Quy tắc phân tầng**: H4 bổ trợ cho H3, H3 bổ trợ cho H2, H2 bổ trợ cho H1.
 5. **Quy tắc đoạn áp chót**: H2 hoặc H3 cuối cùng trước Kết luận không được làm sơ sài hoặc quá ngắn.
+6. **Quy tắc khai thác ý mới mẻ trong thẻ H2, H3 (Content Freshness & Information Gain)**:
+   - Tìm kiếm và đưa vào các góc nhìn độc đáo, chi tiết mới lạ, thực tế từ tài liệu tour hoặc kinh nghiệm thực chiến (mẹo tránh đông đúc, góc check-in ít người biết, khung giờ săn mây lý tưởng, trải nghiệm ẩm thực bản địa độc lạ, lưu ý thời tiết theo mùa...).
+   - Tuyệt đối không rập khuôn hay lặp lại các ý tiêu đề xơ cứng phổ thông trên mạng. Tạo điểm nhấn thông tin giá trị vượt trội giúp bài viết thu hút và nổi bật.
 
 ---
 
@@ -77,7 +96,7 @@ Tuân thủ nghiêm ngặt các quy tắc:
 ---
 
 ### BƯỚC 6: XÂY DỰNG KẾT LUẬN & BẢNG ĐIỀU PHỐI TỪ KHÓA
-* **Phần Kết luận**: Viết thật ngắn gọn, súc tích (chỉ từ 2 - 3 câu ngắn hoặc dưới 50 - 80 từ), tóm tắt nhanh giá trị cốt lõi, bắt buộc chứa 1 lần từ khóa chính + lời kêu gọi hành động (CTA) rõ ràng, dứt khoát. Tuyệt đối không chèn ảnh hay ghi chú ảnh ở Kết luận.
+* **Phần Kết luận**: Viết thật ngắn gọn, súc tích (chỉ từ 2 - 3 câu ngắn hoặc dưới 50 - 80 từ), tóm tắt nhanh giá trị cốt lõi, bắt buộc chứa 1 lần từ khóa chính + **lời kêu gọi hành động (CTA) dứt khoát gắn liền với số Zalo tư vấn và tên thương hiệu của công ty** (nếu người dùng có cung cấp). Tuyệt đối không chèn ảnh hay ghi chú ảnh ở Kết luận.
 * **Bảng Ma trận phân bổ từ khóa (Keyword Distribution Matrix)**:
   - Thống kê vị trí rải từ khóa đảm bảo mật độ tổng bài 1.5% - 2.5% (tối đa 3.0%).
   - **Tỉ lệ từ khóa phải trải đều trong toàn bài và trong từng mục (H2, H3)**: Mật độ không quá dày, không xuất hiện quá gần nhau (cấm nhồi 2 key liền kề); đồng thời không để khoảng cách quá xa mới xuất hiện key 1 lần.
@@ -119,7 +138,7 @@ Mỗi khi người dùng cung cấp cụm từ khóa, Agent sẽ trả về kế
 - Option 2: [Tiêu đề 2 chứa Key 1]
 - Option 3: [Tiêu đề 3 chứa Key 1]
 
-### 2. Đề xuất Thẻ H1 (Tiêu đề bài viết trên trang - Tối ưu Key 2, KHÁC 100% so với SEO Title)
+### 2. Đề xuất Thẻ H1 (Tiêu đề bài viết trên trang - BẮT BUỘC KHÁC 100% so với SEO Title trong mọi trường hợp)
 - Option 1 (Khuyên dùng): [Tiêu đề H1 chứa Key 2]
 - Option 2: [Tiêu đề H1 chứa Key 2]
 - Option 3: [Tiêu đề H1 chứa Key 2]
@@ -128,7 +147,7 @@ Mỗi khi người dùng cung cấp cụm từ khóa, Agent sẽ trả về kế
 - Option 1 (Khuyên dùng): [Mô tả 1 có CTA]
 - Option 2: [Mô tả 2 có CTA]
 
-### 4. Khung định hướng Sapo (Ngắn gọn 2-3 dòng, <155 từ, thu hút và chứa Key chính trong 100 từ đầu)
+### 4. Khung định hướng Sapo (Ngắn gọn 2-3 dòng, <155 từ, thu hút, nhắc tên thương hiệu công ty và chứa Key chính trong 100 từ đầu)
 - [Đoạn Sapo mẫu gợi ý]
 
 ---
@@ -177,7 +196,7 @@ Mỗi khi người dùng cung cấp cụm từ khóa, Agent sẽ trả về kế
 
 ### 5. Kết Luận
 - [Tóm lược ngắn gọn 2 - 3 câu (<50-80 từ), lặp lại 1 lần Từ khóa chính]
-- [Lời kêu gọi hành động CTA rõ ràng, dứt khoát]
+- [Lời kêu gọi hành động CTA dứt khoát gắn liền với số Zalo tư vấn và thương hiệu công ty]
 
 ---
 
@@ -197,10 +216,11 @@ Mỗi khi người dùng cung cấp cụm từ khóa, Agent sẽ trả về kế
 
 ## V. CHECKLIST KIỂM SOÁT DÀN Ý TRƯỚC KHI BÀN GIAO
 - [ ] SEO Title đạt 55 - 60 ký tự, tối ưu Key 1 ở đầu, có số, từ bổ trợ, dấu `|` hoặc `-`.
-- [ ] Thẻ H1 khác SEO Title 100%, tối ưu Key 2 (từ danh sách key người dùng giao).
+- [ ] Thẻ H1 BẮT BUỘC KHÁC SEO TITLE 100% (không trùng lặp câu chữ kể cả khi chỉ có 1 từ khóa duy nhất).
 - [ ] Description đạt 140 - 155 ký tự, có CTA kích thích click, không tiết lộ đáp án.
-- [ ] Sapo ngắn gọn 2 - 3 dòng (<155 từ), thu hút, có Key chính trong 100 từ đầu, giải quyết đúng tiêu đề bài viết.
-- [ ] Kết bài ngắn gọn (2 - 3 câu, <50-80 từ), có Key chính và CTA rõ ràng.
+- [ ] Sapo ngắn gọn 2 - 3 dòng (<155 từ), thu hút, có Key chính trong 100 từ đầu, giải quyết đúng tiêu đề bài viết và khéo léo nhắc tên thương hiệu công ty.
+- [ ] Các thẻ H2, H3 khai thác ý mới mẻ, độc đáo (Information Gain), không rập khuôn tiêu đề sáo rỗng.
+- [ ] Kết bài ngắn gọn (2 - 3 câu, <50-80 từ), có Key chính và CTA dứt khoát gắn với số Zalo tư vấn + thương hiệu công ty.
 - [ ] Tỉ lệ từ khóa trải đều trong toàn bài và từng mục: mật độ không quá dày, không xuất hiện quá gần nhau, không để khoảng cách quá xa, câu chữ linh hoạt và tự nhiên.
 - [ ] Tối thiểu 4 thẻ H2, mỗi H2 có ít nhất 2 thẻ H3.
 - [ ] H2 đầu tiên chứa Key chính.
