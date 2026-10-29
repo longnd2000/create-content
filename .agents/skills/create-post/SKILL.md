@@ -8,8 +8,9 @@ description: Đọc dàn bài đã duyệt từ file Result/outline.docx và ti�
 ## MỤC TIÊU & PHẠM VI HOẠT ĐỘNG
 * Khi người dùng nhập lệnh `/create-post`:
 * Agent hiểu rằng người dùng đã chốt dàn ý trong `Result/outline.docx` và kích hoạt bước viết bài viết hoàn chỉnh.
-* **Định dạng đầu ra bắt buộc**: Xuất trực tiếp ra file Word **`.docx`** trong thư mục **`Result/`** (ví dụ: `Result/bai-viet.docx` hoặc theo slug từ khóa) với đầy đủ định dạng chuẩn **Heading 1, Heading 2, Heading 3, Heading 4, ...** của Microsoft Word.
-* **Quy chuẩn trình bày bắt buộc**: Toàn bộ nội dung sử dụng font **Google Sans Flex**. Cỡ chữ chung là **13px**; tiêu đề chính Heading 1 dùng **16px**, in đậm và căn giữa. Nội dung các đoạn văn căn đều hai bên. Toàn bộ chữ dùng màu đen mặc định; ngoại lệ duy nhất là ghi chú ảnh trong ngoặc đơn được bôi đỏ theo quy định bên dưới.
+* **Định dạng đầu ra bắt buộc**: Xuất trực tiếp **duy nhất 1 file Word `.docx`** vào thư mục **`Result/`** là **`Result/bai-viet.docx`** với đầy đủ định dạng chuẩn **Heading 1, Heading 2, Heading 3, Heading 4, ...** của Microsoft Word. Tuyệt đối không tạo thêm tệp tin trùng lặp.
+* **Quy chuẩn trình bày bắt buộc**: Toàn bộ nội dung sử dụng font **Google Sans Flex** (Google San Flex). Cỡ chữ mặc định cho toàn bộ nội dung là **13px**; tiêu đề chính Heading 1 dùng **16px**, in đậm (bôi đậm) và căn giữa. Nội dung các đoạn văn căn đều hai bên (Justified). **Màu sắc chữ cố định là màu đen `#000000`** cho toàn bộ văn bản (bao gồm tất cả tiêu đề Heading 1 - Heading 6, nội dung các đoạn văn, bảng biểu, liên kết hyperlink); **ngoại lệ duy nhất** là các đoạn ghi chú mô tả ảnh không căn giữa, được bôi đậm, để màu đỏ (`#C00000`) và đặt trong ngoặc đơn `(...)` theo quy định bên dưới.
+* **Quy chuẩn kẻ bảng (Table Standards)**: Mọi bảng biểu trong bài viết bắt buộc phải được **kẻ đúng, có đầy đủ đường line** (bao gồm cả viền ngoài `top`, `bottom`, `left`, `right` và viền ngăn cách bên trong `insideH`, `insideV`). **Bảng tuyệt đối KHÔNG có nền ở bất cứ đâu** (không tô màu nền cho bất kỳ ô nào, kể cả dòng tiêu đề hay thân bảng, không dùng shading/background fill).
 * **Cấm ký tự trang trí và icon**: Không chèn emoji, icon hoặc ký tự trang trí như `⭐`, `📷` và các biểu tượng tương tự vào tiêu đề, nội dung, bảng, danh sách, ghi chú ảnh hay phần thông tin đầu bài. Chỉ sử dụng chữ, số và dấu câu phù hợp với phong cách bài viết. Danh sách gạch đầu dòng chỉ dùng khi cần thiết và phải dùng định dạng danh sách Word sạch.
 * **Quy tắc tuyệt đối**: **KHÔNG tạo hoặc lưu trữ file `.md` trong thư mục làm việc của người dùng**. Mọi khâu chuyển đổi nhị phân (nếu cần file tạm) đều được xử lý ngầm và tự động xóa ngay, trả lại thư mục sạch sẽ chỉ có file `.docx` trong thư mục `Result/`.
 
@@ -93,9 +94,9 @@ description: Đọc dàn bài đã duyệt từ file Result/outline.docx và ti�
      - **Phân bổ trong các phân đoạn H3**: Trong phần triển khai nội dung của mỗi H3, **chỉ nên có tối đa 1 từ khóa**.
      - **Vị trí xuất hiện**: Tránh đặt key ngay sát mép dưới tiêu đề; nên để key xuất hiện tự nhiên ở giữa đoạn văn sau 1-2 câu dẫn nhập.
 
-   - **QUY CHUẨN MÔ TẢ HÌNH ẢNH NGẮN GỌN & DỄ HIỂU (SIMPLE IMAGE NOTES)**:
+   - **QUY CHUẨN MÔ TẢ HÌNH ẢNH (IMAGE NOTES FORMAT)**:
      - Trung bình mỗi **250 từ** hoặc mỗi **H2/H3 phù hợp** chèn một dòng ghi chú mô tả ảnh **ngắn gọn, đơn giản, dễ hiểu**, đặt trong ngoặc đơn (...) ngay tại vị trí cần chèn ảnh.
-     - Ghi chú text thường màu đỏ `#C00000`, không in đậm, không icon, không đóng khung. (Ví dụ: `(Ảnh khách chụp tại Cột Cờ Lũng Cú buổi sáng)`).
+     - **Định dạng đoạn mô tả ảnh bắt buộc**: **KHÔNG căn giữa** (căn lề theo văn bản bình thường), **bôi đậm (in đậm)**, **để màu đỏ** (`#C00000`), không icon, không đóng khung và **bắt buộc đặt trong ngoặc đơn `(...)`**. (Ví dụ: **`(Ảnh khách chụp tại Cột cờ Lũng Cú buổi sáng)`**).
      - Tuyệt đối không chèn ảnh hay note ảnh trong phần Kết luận.
 
    - **CẮT BỎ HOÀN TOÀN HOA MỸ & MẪU CÂU AI (Strict Anti-AI & Human Voice)**:
@@ -104,13 +105,13 @@ description: Đọc dàn bài đã duyệt từ file Result/outline.docx và ti�
      - CẤM từ ngữ sáo rỗng: *“điểm hẹn trong mơ”, “những tâm hồn mê xê dịch”, “hít căng lồng ngực”, “bức tranh tuyệt mỹ”, “thiên đường nơi hạ giới”, “đắm say lòng người”*.
 
    - **QUY CHUẨN FONT VÀ CỠ CHỮ**:
-     - Font: **Google Sans Flex** toàn bài.
-     - Tiêu đề chính Heading 1: **16px**, in đậm, căn giữa.
-     - Thân bài & Heading phụ: **13px**. Đoạn văn căn đều hai bên.
-     - Bảng biểu: Viền đen, nền trắng, chữ đen, dòng tiêu đề in đậm căn giữa.
+     - Font chữ: **Google Sans Flex** (Google San Flex) cho toàn bộ bài viết.
+     - Cỡ chữ mặc định: **13px** cho toàn bộ thân bài, các đoạn văn, danh sách bullet points, bảng biểu và headings phụ. Đoạn văn căn đều hai bên (Justified).
+     - Tiêu đề chính Heading 1 (đưa Title xuống): **16px**, in đậm (bôi đậm), căn giữa (Center).
+     - Bảng biểu: Bắt buộc kẻ đúng, có đầy đủ đường line (cả viền ngoài và viền trong: top, bottom, left, right, insideH, insideV), bảng tuyệt đối KHÔNG có nền ở bất cứ đâu (không dùng background fill/shading cho bất kỳ ô nào), màu chữ cố định là #000000, dòng tiêu đề in đậm căn giữa.
 
 3. **Đóng Gói Trực Tiếp Sang File `.docx` Vào Thư Mục `Result/`**:
-   - Agent biên dịch nội dung hoàn chỉnh và xuất bản trực tiếp ra file Word trong thư mục `Result/` (ví dụ `Result/bai-viet.docx` hoặc theo slug từ khóa).
+   - Agent biên dịch nội dung hoàn chỉnh và xuất bản trực tiếp ra **duy nhất 1 file Word**: `Result/bai-viet.docx`. Không xuất thêm bản sao hay file theo slug để tránh trùng lặp.
    - Bảo toàn nguyên vẹn thư mục `ContentTour/*`. Xóa ngay mọi tệp tạm (nếu phát sinh), không để lại file `.md` trong thư mục làm việc.
    - Xác nhận file `.docx` trong thư mục `Result/` hoàn tất với đầy đủ styles Word chuẩn: Heading 1 -> Heading 4, bảng chuẩn, không icon/emoji thừa, tuân thủ đúng quy cách viết hoa chữ cái đầu tiêu đề và headings.
 

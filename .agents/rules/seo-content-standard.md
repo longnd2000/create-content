@@ -4,6 +4,17 @@ Tài liệu này hệ thống hóa các quy tắc vàng viết bài chuẩn SEO 
 
 ---
 
+## ⚠️ QUY CHUẨN BẮT BUỘC VỀ FONT CHỮ, MÀU SẮC & KẺ BẢNG (TYPOGRAPHY & TABLE RULES)
+* **Font chữ áp dụng**: Bắt buộc sử dụng font **Google Sans Flex** (Google San Flex) cho toàn bộ văn bản và tài liệu Word (`.docx`) xuất bản.
+* **Cỡ chữ mặc định (Default Font Size)**: Bắt buộc dùng **13px** cho toàn bộ nội dung bài viết (thân bài, các đoạn văn, danh sách bullet points, bảng biểu, thông số kỹ thuật, thẻ heading phụ H2 - H6). Các đoạn văn căn đều hai bên (Justified).
+* **Tiêu đề chính bài viết (Main Title / Heading 1 trên trang)**: Bắt buộc để **16px**, **in đậm (bôi đậm)** và **căn giữa** (Center) ngay phía trên đoạn mở đầu (Sapo) - lấy chính xác từ nội dung dòng SEO Title đưa xuống.
+* **Màu sắc chữ chuẩn hóa**: Cố định là màu đen (`#000000`) cho toàn bộ bài viết (tất cả tiêu đề H1 - H6, văn bản thân bài, bảng biểu, siêu liên kết hyperlink); ngoại lệ duy nhất là đoạn mô tả ảnh không căn giữa, được bôi đậm, để màu đỏ (`#C00000`) và đặt trong ngoặc đơn `(...)`.
+* **Quy chuẩn kẻ bảng (Table Standards)**:
+  * **Kẻ bảng đúng và đầy đủ đường line**: Bắt buộc kẻ đầy đủ tất cả các đường viền lưới bao gồm viền ngoài (`top`, `bottom`, `left`, `right`) và viền ngăn cách các ô bên trong (`insideH`, `insideV`), đường nét rõ ràng, ngay ngắn.
+  * **Tuyệt đối KHÔNG có nền ở bất cứ đâu**: Bảng hoàn toàn không có màu nền (không tô màu ô tiêu đề, không tô màu hàng chẵn lẻ, không thêm shading/background fill ở bất kỳ ô nào trong bảng).
+
+---
+
 ## ⚠️ QUY CHUẨN BẮT BUỘC VỀ VIẾT HOA TIÊU ĐỀ & HEADINGS (TITLE, H1, H2, H3, H4...)
 * **CẤM TUYỆT ĐỐI phong cách viết hoa chữ cái đầu của mỗi từ (Title Case tiếng Anh)**:
   * SAI: `Kinh Nghiệm Du Lịch Hà Giang Tự Túc Tiết Kiệm Nhất`
@@ -82,7 +93,7 @@ Tài liệu này hệ thống hóa các quy tắc vàng viết bài chuẩn SEO 
 * **Kiểm soát phạm vi**: Không viết chi tiết đi quá sâu vào các ý phụ mà đã có bài viết chính riêng.
 * **Heading quan trọng (⭐)**: Dồn trọng tâm triển khai sâu sắc, chi tiết để dẫn dắt người đọc.
 * **Nguyên tắc ưu tiên**: Khi quá khó để vừa viết khác vừa đảm bảo hiển thị từ khóa, **ưu tiên sự viết khác và văn phong tự nhiên hơn là gượng ép tuân thủ từ khóa**.
-* **Hình ảnh**: Trung bình mỗi **250 từ** hoặc mỗi **H2/H3** nên có 1 ảnh liên quan (ghi chú ảnh ngắn gọn bằng chữ đỏ trong ngoặc đơn, không note ảnh ở Kết bài).
+* **Hình ảnh**: Trung bình mỗi **250 từ** hoặc mỗi **H2/H3** nên có 1 ảnh liên quan (**đoạn mô tả ảnh không căn giữa, bôi đậm, để màu đỏ và đặt trong ngoặc (...)**, không note ảnh ở Kết bài).
 
 ---
 
@@ -105,6 +116,8 @@ Tài liệu này hệ thống hóa các quy tắc vàng viết bài chuẩn SEO 
 
 | Hạng mục | Tiêu chuẩn kỹ thuật | Trạng thái |
 | :--- | :--- | :---: |
+| **Font & Định dạng** | Font **Google Sans Flex** toàn bài, font mặc định **13px** (căn đều 2 bên), tiêu đề chính **16px in đậm (bôi đậm)** căn giữa | [ ] |
+| **Màu chữ & Kẻ bảng** | Màu chữ cố định **#000000** toàn bài (ngoại lệ duy nhất mô tả ảnh màu đỏ `#C00000`), bảng kẻ đủ đường line (ngoài và trong), **tuyệt đối KHÔNG có nền** ở bất cứ đâu | [ ] |
 | **Quy tắc viết hoa** | **Cấm Title Case**, chỉ viết hoa chữ đầu câu, địa danh, tên riêng, từ viết tắt đặc biệt | [ ] |
 | **SEO Title** | 55 - 60 ký tự, Key chính ở đầu (1-2 lần), có số, từ bổ trợ, dấu `\|` hoặc `-`, Unique (`Allintitle`) | [ ] |
 | **Meta Description**| 140 - 155 ký tự, Key chính ở đầu + Key phụ phía sau, gợi nỗi đau/giải pháp, có CTA cuối | [ ] |
@@ -112,6 +125,6 @@ Tài liệu này hệ thống hóa các quy tắc vàng viết bài chuẩn SEO 
 | **Sapo** | 2 - 3 dòng (<155 từ), giải quyết vấn đề H1, Key chính trong 100 từ đầu, có tên thương hiệu | [ ] |
 | **Headings** | <60 ký tự, $\ge 4$ H2, mỗi H2 $\ge 2$ H3, H2 đầu có Key chính, phân cấp H4->H3->H2->H1 chuẩn | [ ] |
 | **Thân bài** | Đoạn ngắn 1-3 câu, có Bảng/List, không lỗi chính tả, spin text outline, H2/H3 áp chót không bị cụt | [ ] |
-| **Hình ảnh** | 1 ảnh/250 từ hoặc mỗi H2/H3 (note ảnh chữ đỏ, Kết luận KHÔNG có ảnh) | [ ] |
+| **Hình ảnh** | 1 ảnh/250 từ hoặc mỗi H2/H3 (đoạn mô tả ảnh không căn giữa, bôi đậm, để màu đỏ và đặt trong ngoặc (...), Kết luận KHÔNG có ảnh) | [ ] |
 | **Keyword** | Mật độ 1.5% - 3%, phân bổ chuẩn Sapo/Kết luận/H2 đầu, mỗi H3 max 1 key, tự nhiên > nhồi nhét | [ ] |
 | **Kết luận** | Ngắn gọn (<50-80 từ), chứa 1 key chính, có CTA kèm Zalo và thương hiệu công ty | [ ] |

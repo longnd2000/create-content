@@ -8,7 +8,7 @@ description: Tạo bộ tiêu đề SEO Title (55-60 ký tự) và Thẻ H1 (55-
 ## MỤC TIÊU & PHẠM VI HOẠT ĐỘNG
 * Khi người dùng nhập lệnh `/create-title [danh sách từ khóa]` hoặc yêu cầu tạo tiêu đề bài viết:
 * Agent đề xuất bộ phương án **SEO Title** và **Thẻ H1** đạt chuẩn SEO tuyệt đối, có đếm ký tự rõ ràng, tuân thủ nghiêm ngặt nguyên tắc độc lập giữa Title và H1.
-* **LƯU Ý QUAN TRỌNG KHI XUẤT BẢN BÀI VIẾT**: Nội dung **Title** sẽ được đưa xuống dưới để sử dụng làm tiêu đề chính của bài viết (Heading 1, 16px, in đậm, căn giữa, đặt ngay phía trên đoạn Sapo) chứ không phải H1. Thẻ H1 là trường dữ liệu SEO bổ trợ lưu trong khối thông số Header Block.
+* **LƯU Ý QUAN TRỌNG KHI XUẤT BẢN BÀI VIẾT**: Nội dung **Title** sẽ được đưa xuống dưới để sử dụng làm tiêu đề chính của bài viết (Heading 1, font **Google Sans Flex**, cỡ chữ **16px**, **in đậm (bôi đậm)**, căn giữa, đặt ngay phía trên đoạn Sapo; phần nội dung thân bài dùng font mặc định **13px**) chứ không phải H1. Thẻ H1 là trường dữ liệu SEO bổ trợ lưu trong khối thông số Header Block.
 
 ---
 

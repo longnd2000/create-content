@@ -81,6 +81,7 @@ description: Tạo dàn ý bài viết chuẩn SEO cho 2 dạng: [tour] (dựa t
    - Đảm bảo từ khóa rải đều khắp các mục, mật độ tổng thể đạt 1.5% - 3%.
 
 5. **XUẤT BẢN FILE WORD DOCX VÀO THƯ MỤC RESULT/ (CHỈ GIỮ FILE DOCX)**:
+   - **Quy chuẩn định dạng file Word**: Toàn bộ tài liệu sử dụng font **Google Sans Flex** (Google San Flex); cỡ chữ mặc định là **13px**; tiêu đề chính (Heading 1) để **16px, in đậm (bôi đậm), căn giữa**. Đoạn văn căn đều hai bên. Màu sắc chữ cố định là **#000000** (ngoại lệ duy nhất mô tả ảnh màu đỏ #C00000). Mọi bảng biểu kẻ đúng, đủ đường line (cả viền ngoài và viền trong), tuyệt đối **KHÔNG có nền** ở bất cứ đâu.
    - Đóng gói toàn bộ dàn ý trực tiếp ra file Word `Result/outline.docx`.
    - **Quy tắc tuyệt đối**: Lưu kết quả vào thư mục `Result/`. KHÔNG để lại file `.md` trong thư mục làm việc của người dùng.
    - Xác nhận file `Result/outline.docx` được tạo thành công với các styles Word chuẩn.
